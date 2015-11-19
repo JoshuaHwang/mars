@@ -1,0 +1,84 @@
+* {
+  text-align: center;
+  /* border: 1px solid black; */
+}
+a:link, a:visited {
+  text-decoration: none;
+}
+#headerBackground {
+  background-image: url('../images/the-martian.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 720px;
+  margin-bottom: 30px;
+}
+#logo, #fold, #navbar {
+  color: #ffffff;
+}
+h1 {
+  font-size: 40px;
+  font-weight: 100;
+  letter-spacing: 5px;
+}
+#fold {
+  margin-top: 100px;
+}
+h2 {
+  font-size: 45px;
+  font-weight: 100;
+}
+.hook {
+  font-size: 65px;
+  font-weight: 100;
+  letter-spacing: 5px;
+}
+li {
+  display: inline;
+  list-style: none; /* may move this higher or lower */
+}
+#navBar {
+  margin-top: 30px;
+}
+.nav-link:link, .nav-link:visited {
+  color: #ffffff;
+  font-weight: 200;
+  margin-left: 40px;
+  margin-right: 40px;
+  letter-spacing: 2px;
+}
+.btn:link, .btn:hover {
+  background-color: transparent;
+  color: #ffffff;
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+#mission {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+h3 {
+  font-size: 40px;
+  font-weight: 300;
+  margin-bottom: 50px;
+}
+.statement {
+  font-size: 18px;
+  font-weight: 200;
+}
+#spaceTier {
+  background-image: url('../images/space-craft.jpg');
+  width: 100%;
+  height: 300px;
+  color: #ffffff;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+#pilot {
+  background-image: url('../images/pilots.jpg');
+  width: 100%;
+  height: 300px;
+  color: #ffffff;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
