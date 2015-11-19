@@ -1,6 +1,5 @@
 * {
   text-align: center;
-  /* border: 1px solid black; */
 }
 a:link, a:visited {
   text-decoration: none;
@@ -16,7 +15,7 @@ a:link, a:visited {
 #logo, #fold, #navbar {
   color: #ffffff;
 }
-h1 {
+h1, .pilot-logo {
   font-size: 40px;
   font-weight: 100;
   letter-spacing: 5px;
@@ -47,7 +46,7 @@ li {
   margin-right: 40px;
   letter-spacing: 2px;
 }
-.btn-default:link, .btn-default:hover {
+.btn-default:link, .btn-default:hover, .btn-default:active, .btn-default:visited, .sign-up.btn {
   background-color: transparent;
   color: #ffffff;
   font-weight: 200;
@@ -86,7 +85,7 @@ h3 {
   color: #ffffff;
   margin-top: -10px;
 }
-h4 {
+.image-text {
   color: #ffffff;
   font-size: 25px;
   font-weight: 100;
@@ -117,6 +116,7 @@ h4 {
 }
 footer {
   background-color: #2C2F2F;
+  width: 100%;
   height: 80px;
   margin-top: 50px;
 }
@@ -124,4 +124,45 @@ footer {
   color: #ffffff;
   margin-left: 15px;
 }
-
+/* Begin custom CSS for pilot page */
+#pilotHead {
+  background-image: url('../images/milkyway.jpg');
+  opacity: .90;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+  margin-bottom: 50px;
+}
+.glyph {
+  background-color: transparent;
+  color: #ffffff;
+  border: none;
+  margin-top: 20px;
+  margin-left: 80px;
+}
+.index:link, .index:visited {
+  color: #ffffff;
+  font-weight: 100;
+  margin-left: 40px;
+  margin-right: 40px;
+  letter-spacing: 2px;
+}
+.pilot-meet {
+  font-size: 70px;
+  color: #ffffff;
+  margin-top: 50px;
+}
+.pilot-row {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.pilot-name {
+  font-size: 30px;
+  font-weight: 200;
+  letter-spacing: 2px;
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+.pilot-bio {
+  font-size: 16px;
+}
