@@ -40,14 +40,14 @@ li {
 #navBar {
   margin-top: 30px;
 }
-.nav-link:link, .nav-link:visited {
+.nav-link:link, .nav-link:visited, .footer-links:link, .footer-links:visited {
   color: #ffffff;
   font-weight: 200;
   margin-left: 40px;
   margin-right: 40px;
   letter-spacing: 2px;
 }
-.btn:link, .btn:hover {
+.btn-default:link, .btn-default:hover {
   background-color: transparent;
   color: #ffffff;
   font-weight: 200;
@@ -63,22 +63,65 @@ h3 {
   margin-bottom: 50px;
 }
 .statement {
-  font-size: 18px;
+  font-size: 21px;
   font-weight: 200;
 }
-#spaceTier {
-  background-image: url('../images/space-craft.jpg');
-  width: 100%;
-  height: 300px;
-  color: #ffffff;
-  background-repeat: no-repeat;
-  display: inline-block;
+#main {
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
-#pilot {
-  background-image: url('../images/pilots.jpg');
-  width: 100%;
-  height: 300px;
-  color: #ffffff;
-  background-repeat: no-repeat;
+.learn-more {
+  position: relative;
   display: inline-block;
+  border: 1px solid #ffffff;
 }
+.info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 0;
+  font-size: 20px;
+  text-align: center;
+  color: #ffffff;
+  margin-top: -10px;
+}
+h4 {
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: 100;
+  margin-top: 45px;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+#testimonial {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.quote {
+  font-size: 30px;
+  font-weight: 100;
+}
+.armstrong {
+  font-size: 18px;
+  font-weight: 200;
+  color: #C1C1C1;
+  font-style: italic;
+  margin-top: 20px;
+}
+.btn-primary:link, .btn-primary:visited, .btn-primary:hover {
+  background-color: transparent;
+  color: #080808;
+  border-color: #080808;
+  margin-top: 20px;
+}
+footer {
+  background-color: #2C2F2F;
+  height: 80px;
+  margin-top: 50px;
+}
+.social {
+  color: #ffffff;
+  margin-left: 15px;
+}
+
