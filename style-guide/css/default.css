@@ -1,21 +1,43 @@
+/* CSS Style Guide
 * {
-  font-family: sans-serif, "Neue Helvetica";
+  background: ;
+  position: ;
+  float: ;
+  display: ;
+  width: ;
+  height: ;
+  color: ;
+  font: ;
+  margin: ;
+  padding: ;
+  list: ;
+
+  heirarchy of css properties
+}
+*/
+
+* {
   text-align: center;
 }
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Helvetica", sans-serif;
+}
+p {
+  font-family: "Neue Helvetica" sans-serif;
+}
 .header {
-  margin-bottom: 30px;
-  background-color: #F0E7E7;
   width: 100%;
   height: 90px;
+  margin-bottom: 30px;
 }
 li {
-  list-style: none;
   display: inline;
-  font-size: 20px;
-  margin-right: 10px;
-  margin-left: 30px;
-  margin-top: 25px;
   float: left;
+  font-size: 20px;
+  margin-top: 25px;
+  margin-right: 50px;
+  margin-left: 30px;
+  list-style: none;
 }
 a:link, a:visited {
   text-decoration: none;
@@ -33,7 +55,6 @@ a:link, a:visited {
   height: 120px;
 }
 .info-back {
-  background-color: #FFF5EE ;
   width: 100%;
   height: 400px;
 }
@@ -57,3 +78,4 @@ h4 {
   font-size: 30px;
   letter-spacing: 10px;
 }
+
