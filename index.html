@@ -26,7 +26,34 @@
             <li><a class="nav-link" href="space-tiers.html">Space Tiers</a></li>
             <li><a class="nav-link" href="pilots.html">Pilots</a></li>
             <li><a class="nav-link" href="testimonials.html">Testimonials</a></li>
-            <li><a class="sign-up btn btn-default" href="#" role="button">Sign Up</a></li> <!-- put the modal for signup here -->
+            <li>
+              <!-- Button trigger modal -->
+              <button type="button" class="modal-btn btn btn-default" data-toggle="modal" data-target="#register">
+                Sign Up
+              </button>
+              <!-- Modal -->
+              <div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="registerLabel">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h4 class="modal-title" id="registerLabel">Explore new horizons.</h4>
+                    </div>
+                    <div class="modal-body">
+                      <form>
+                        <input class="form-sign" type="text" name="username" size="30" maxlength="50" placeholder="Full name">
+                        <input class="form-sign" type="email" name="email" placeholder="Email">
+                        <input class="form-sign" type="password" name="password" placeholder="Password">
+                      </form> <!-- form for sign up ends here -->
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="form-btn btn btn-default" data-dismiss="modal">Close</button>
+                      <button type="button" class="submit-btn btn btn-default">Submit</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li> <!-- put the modal for signup here -->
           </ul>
         </div> <!-- closes the navbar -->
       </div>
@@ -69,7 +96,7 @@
       <div class="row">
         <div id="testimonial" class="col-md-8 col-md-offset-2">
           <p class="quote">"Lorem ipsum dolor sit amet, quo putant appareat vituperatoribus eu. Te habeo delicata quo. Rebum utamur appareat ex quo, has in duis erat persius, id vim fabulas corpora. Eu dictas eligendi posidonium his. In assum summo soleat vel."</p> <!--insert the testimonials -->
-          <p class="armstrong">Niel Armstrong</p>
+          <p class="armstrong">Neil Armstrong</p>
           <a class="test-page btn btn-primary" href="testimonials.html" role="button">Testimonials</a> <!-- buttons to navigate to testimonial page -->
         </div> <!-- closes the testimonial -->
       </div>

@@ -20,6 +20,27 @@ h1, .pilot-logo {
   font-weight: 100;
   letter-spacing: 5px;
 }
+button.modal-btn, button.modal-btn:hover {
+  background-color: transparent;
+  color: #ffffff;
+}
+button.form-button, button.form-btn:hover {
+  background-color: transparent;
+  color: #080808;
+}
+#registerLabel {
+  font-size: 25px;
+  font-weight: 100;
+}
+form input {
+  width: 300px;
+  text-align: left;
+  margin-top: 20px;
+}
+.submit-btn, .submit-btn:hover {
+  background-color: #E74926 !important;
+  color: #ffffff !important;
+}
 #fold {
   margin-top: 100px;
 }
@@ -68,6 +89,9 @@ h3 {
 #main {
   margin-top: 50px;
   margin-bottom: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
 }
 .learn-more {
   position: relative;
@@ -120,7 +144,7 @@ footer {
   height: 80px;
   margin-top: 50px;
 }
-.social {
+.social:link, .social:hover, .social:visited {
   color: #ffffff;
   margin-left: 15px;
 }
@@ -165,4 +189,5 @@ footer {
 }
 .pilot-bio {
   font-size: 16px;
+  text-align: left
 }
