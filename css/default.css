@@ -15,7 +15,7 @@ a:link, a:visited {
 #logo, #fold, #navbar {
   color: #ffffff;
 }
-h1, .pilot-logo {
+h1.main-head, h1.pilot-head, h1.testimonial-head {
   font-size: 40px;
   font-weight: 100;
   letter-spacing: 5px;
