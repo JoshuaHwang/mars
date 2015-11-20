@@ -78,13 +78,14 @@ li {
   margin-bottom: 50px;
 }
 h3 {
-  font-size: 40px;
-  font-weight: 300;
+  font-size: 45px;
+  font-weight: 100;
   margin-bottom: 50px;
 }
 .statement {
   font-size: 21px;
   font-weight: 200;
+  text-align: left;
 }
 #main {
   margin-top: 50px;
@@ -134,8 +135,8 @@ h3 {
 }
 .btn-primary:link, .btn-primary:visited, .btn-primary:hover {
   background-color: transparent;
-  color: #080808;
-  border-color: #080808;
+  color: #A6A5A3;
+  border-color: #A6A5A3;
   margin-top: 20px;
 }
 footer {
