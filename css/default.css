@@ -188,7 +188,50 @@ footer {
   margin-top: 35px;
   margin-bottom: 35px;
 }
-.pilot-bio {
+.pilot-bio, .martian-test {
   font-size: 16px;
   text-align: left
+}
+/* being custom CSS for testimonials */
+#testimonialHead {
+  background-image: url('../images/mann.jpg');
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+}
+.profile-row {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.testimonial-hook {
+  font-size: 70px;
+  color: #ffffff;
+}
+.profile {
+  background-color: #f8f8f8;
+  padding-top: 40px;
+  border: 1px solid #ffffff;
+  margin-bottom: 30px;
+}
+.bio-head {
+  margin-top: 50px;
+  font-size: 35px;
+  font-weight: 100;
+}
+.martian-test {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.sponsor-row {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.sponsors {
+  font-size: 45px;
+  font-weight: 100;
+  margin-bottom: 30px;
+}
+.sponsor-logo {
+  display: inline-block;
+  padding: 0px 35px 0px 35px;
 }
