@@ -15,7 +15,7 @@ a:link, a:visited {
 #logo, #fold, #navbar {
   color: #ffffff;
 }
-h1.main-head, h1.pilot-head, h1.testimonial-head {
+h1.main-head, h1.pilot-head {
   font-size: 40px;
   font-weight: 100;
   letter-spacing: 5px;
@@ -144,10 +144,18 @@ footer {
   width: 100%;
   height: 80px;
   margin-top: 50px;
+  padding-top: 20px;
 }
 .social:link, .social:hover, .social:visited {
   color: #ffffff;
   margin-left: 15px;
+}
+h6 {
+  font-size: 27px;
+  font-weight: 100;
+  display: inline;
+  float: left;
+  color: #ffffff;
 }
 /* Begin custom CSS for pilot page */
 #pilotHead {
@@ -234,4 +242,29 @@ footer {
 .sponsor-logo {
   display: inline-block;
   padding: 0px 35px 0px 35px;
+}
+/* start custom css for space tier */
+.purchase-tiers {
+  position: relative;
+  display: inline-block;
+  border: 1px solid #ffffff;
+}
+.purchase {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  font-size: 20px;
+  text-align: center;
+  color: #ffffff;
+  padding-bottom: 50px;
+}
+.purchase-text {
+  font-size: 100px;
+  font-weight: 100;
+  letter-spacing: 5px;
+}
+.purchase-button {
+  font-size: 40px;
+  font-weight: 100 !important;
 }
