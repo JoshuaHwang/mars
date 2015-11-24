@@ -19,7 +19,7 @@
     <div id="tierHead" class="container">
       <div class="row">
         <div id="logo" class="col-md-4">
-          <h1 class="tier-head"><a class="index" href="index.html">Mars-One</a></h1> <!-- insert name of the mission -->
+          <h1><a class="index tier-head" href="index.html">Mars-One</a></h1> <!-- insert name of the mission -->
         </div> <!-- closes the header logo -->
         <div id="nav-button" class="dropdown col-md-3 col-md-offset-5">
           <button type="button" class="hidden-xs hidden-sm glyph btn btn-default" aria-label="Right Align" data-toggle="dropdown">
@@ -30,76 +30,213 @@
         <div class="row">
           <div id="tier-fold" class="col-md-8 col-md-offset-2">
             <h2 class="tier-meet">Explore our different tiers of space travel.</h2>
-            <p>Find one that suits your needs.</p> <!-- insert the hook -->
+            <p class="tier-hook">Find one that suits your needs.</p> <!-- insert the hook -->
           </div> <!-- closes the fold -->
         </div>
       </div>
     </div>
-    <div class="purchase-tiers">
-      <img class="image-responsive tier-image" src="images/orion.jpg" alt="Orion spacecraft">
-        <div class="purchase">
-        <h4 class="purchase-text">The Orion</h4>
-        <a class="purchase-button btn-default" href="#" role="button">Buy now ></a>
-      </div>
-    </div> <!-- closes the purchase images -->
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <h5>Tavel at the speed of light.</h5>
-          <p>The Orion was designed to get you there, and get you there quick.</p>
+    <div id="carousel-space-tier" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-space-tier" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-space-tier" data-slide-to="1"></li>
+        <li data-target="#carousel-space-tier" data-slide-to="2"></li>
+      </ol>
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img src="images/orion.jpg" alt="Orion spacecraft">
+          <div class="carousel-caption">
+            <h4 class="purchase-text">The Orion</h4>
+            <a class="purchase-button btn-default" href="#spacecraft-info" role="button">Learn more ></a>
+          </div>
         </div>
-        <div class="col-md-6">
-          <ul>
-            <li class="tier-analysis">Travel time: 39 days</li>
-            <li class="tier-analysis">Speed of travel: 36,000 mph</li>
-            <li class="tier-analysis">Cost: </li>
-          </ul>
-        </div> <!-- closes the description of the space tiers -->
+        <div class="item">
+          <img src="images/normandy.jpg" alt="Normandy spacecraft">
+          <div class="carousel-caption">
+            <h4 class="purchase-text">The Normandy</h4>
+            <a class="purchase-button btn-default" href="#spacecraft-info" role="button">Learn more ></a>
+          </div>
+        </div>
+        <div class="item">
+          <img src="images/oneill.jpg" alt="Normandy spacecraft">
+          <div class="carousel-caption">
+            <h4 class="purchase-text">The O'Neill</h4>
+            <a class="purchase-button btn-default" href="#spacecraft-info" role="button">Learn more ></a>
+          </div>
+        </div>
       </div>
+      <!-- Controls -->
+      <a class="left carousel-control" href="#carousel-space-tier" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#carousel-space-tier" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
     </div>
-    <div class="purchase-tiers">
-      <img class="image-responsive tier-image" src="images/normandy.jpg" alt="Normandy spacecraft">
-      <div class="purchase">
-        <h4 class="purchase-text">The Normandy</h4>
-        <a class="purchase-button btn-default" href="#" role="button">Buy now ></a>
-      </div>
-    </div> <!-- closes the purchase images -->
     <div class="container">
       <div class="row">
-        <div class="col-md-6">
-          <h5>Tour the galaxy.</h5>
-          <p>The Normandy provides a stunning view of our solar system while traveling </p>
+        <div class="col-md-12">
+          <table id="spacecraft-info" class="table">
+            <thead>
+              <tr>
+                <th>The Orion</th>
+                <th>The Normandy</th>
+                <th>The O'Neill</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td colspan="3" class="td-title">Summary</td>
+              </tr>
+              <tr>
+                <td>
+                  <ul class="summary">
+                    <li>Designed to get you there quick, the Orion is our smallest but fastest spacecraft. What you give up in comfort you gain in time. This one's for the go-getters.
+                    </li>
+                  </ul>
+                </td>
+                <td>
+                  <ul class="summary">
+                    <li>Travel in retro style as you fly in a spacecraft designed to feel like the days of 747's. With enough cabin room to feel comfortable, the Normandy will get you to Mars with enough time to enjoy the view.
+                    </li>
+                  </ul>
+                </td>
+                <td>
+                  <ul class="summary">
+                    <li>Gravity, atmosphere, comfort. The O'Neill was created to look and feel like the mother planet Earth, providing a level of familiarity so real you won't even notice the trip. </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="3" class="td-title">Specs</td>
+              </tr>
+              <tr>
+                <td>
+                  <ul class="specs">
+                    <li>39 days</li>
+                    <li>36,000 mph</li>
+                    <li>7 person capacity</li>
+                  </ul>
+                </td>
+                <td>
+                  <ul class="specs">
+                    <li>101 days</li>
+                    <li>20,450 mph</li>
+                    <li>250 person capacity</li>
+                  </ul>
+                </td>
+                <td>
+                  <ul class="specs">
+                    <li>298 days</li>
+                    <li>10,000 mph</li>
+                    <li>5000 person capacity</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="3" class="td-title">Pricing</td>
+              </tr>
+              <tr>
+                <td>
+                  <ul class="pricing">
+                    <li>1 passenges</li>
+                    <li>3 passengers</li>
+                    <li>5 passengers</li>
+                    <li>
+                      <!-- Button trigger modal -->
+                      <button type="button" class="buy-btn btn btn-primary" data-toggle="modal" data-target="#buyModal">
+                        Buy
+                      </button>
+                      <!-- but button modal -->
+                      <div class="modal fade" id="buyModal" tabindex="-1" role="dialog" aria-labelledby="buyModalLabel">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                              <h4 class="modal-title" id="buyModalLabel">Order form</h4>
+                            </div>
+                            <div class="modal-body">
+                              ...
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                              <button type="button" class="btn btn-primary">Checkout</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </td>
+                <td>
+                  <ul class="pricing">
+                    <li>3 passengers</li>
+                    <li>7 passengers</li>
+                    <li>10 passengers</li>
+                    <li>
+                      <!-- Button trigger modal -->
+                      <button type="button" class="buy-btn btn btn-primary" data-toggle="modal" data-target="#buyModal">
+                        Buy
+                      </button>
+                      <!-- but button modal -->
+                      <div class="modal fade" id="buyModal" tabindex="-1" role="dialog" aria-labelledby="buyModalLabel">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                              <h4 class="modal-title" id="buyModalLabel">Order form</h4>
+                            </div>
+                            <div class="modal-body">
+                              ...
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                              <button type="button" class="btn btn-primary">Checkout</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </td>
+                <td>
+                  <ul class="pricing">
+                    <li>7 passengers</li>
+                    <li>10 passengers</li>
+                    <li>15 passengers</li>
+                    <li>
+                      <!-- Button trigger modal -->
+                      <button type="button" class="buy-btn btn btn-primary" data-toggle="modal" data-target="#buyModal">
+                        Buy
+                      </button>
+                      <!-- but button modal -->
+                      <div class="modal fade" id="buyModal" tabindex="-1" role="dialog" aria-labelledby="buyModalLabel">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                              <h4 class="modal-title" id="buyModalLabel">Order form</h4>
+                            </div>
+                            <div class="modal-body">
+                              ...
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                              <button type="button" class="btn btn-primary">Checkout</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table> 
         </div>
-        <div class="col-md-6">
-          <ul>
-            <li class="tier-analysis">Travel time: 162 days</li>
-            <li class="tier-analysis">Speed of travel: 13,500 mph</li>
-            <li class="tier-analysis">Cost: </li>
-          </ul>
-        </div> <!-- closes the description of the space tiers -->
-      </div>
-    </div>
-    <div class="purchase-tiers">
-      <img class="image-responsive tier-image" src="images/oneill.jpg" alt="O'Neill spacecraft">
-      <div class="purchase">
-        <h4 class="purchase-text">The O'Neill</h4>
-        <a class="purchase-button btn-default" href="#" role="button">Buy now ></a>
-      </div>
-    </div> <!-- closes the purchase images -->
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <h5>Gravity, atmosphere, sunlight.</h5>
-          <p>Travel in a world similar to Earth. The O'Neill provides a level of 
-          comfort that will </p>
-        </div>
-        <div class="col-md-6">
-          <ul>
-            <li class="tier-analysis">Travel time: 365 days</li>
-            <li class="tier-analysis">Speed of travel: 10,000mph</li>
-            <li class="tier-analysis">Cost: $10,000</li>
-          </ul> <!-- closes the description of the space tiers -->
-        </div> <!-- closes the description of the space tiers -->
       </div>
     </div>
     <footer>

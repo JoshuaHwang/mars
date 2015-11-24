@@ -53,7 +53,7 @@ h2 {
   font-weight: 100;
   letter-spacing: 5px;
 }
-li {
+.nav-list {
   display: inline;
   list-style: none; /* may move this higher or lower */
 }
@@ -244,10 +244,23 @@ h6 {
   padding: 0px 35px 0px 35px;
 }
 /* start custom css for space tier */
+#tierHead {
+  background-color: #F5F5F5;
+  width: 100%;
+}
 .purchase-tiers {
   position: relative;
   display: inline-block;
   border: 1px solid #ffffff;
+}
+.tier-image {
+  max-width: 100%;
+  height: auto;
+  width: auto;
+}
+.tier-hook {
+  font-size: 40px;
+  font-weight: 100;
 }
 .purchase {
   position: absolute;
@@ -260,11 +273,59 @@ h6 {
   padding-bottom: 50px;
 }
 .purchase-text {
-  font-size: 100px;
-  font-weight: 100;
-  letter-spacing: 5px;
+  font-size: 42px;
+  font-weight: 200;
+  letter-spacing: 2px;
 }
 .purchase-button {
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 100 !important;
+}
+.tier-analysis {
+  text-align: left;
+}
+#carousel-space-tier {
+  background-color: #ffffff;
+  width: 1280px;
+  margin-top: 50px;
+  margin-right: auto;
+  margin-bottom: 50px;
+  margin-left: auto;
+}
+.carousel-inner .item img {
+  width: 1280px;
+  max-height: 700px;
+  margin-right: auto;
+  margin-left: auto;
+}
+thead tr th {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 200;
+}
+.td-title {
+  font-size: 25px;
+  font-weight: 100;
+}
+tr td {
+  text-align: left;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+}
+td ul li {
+  font-size: 18px;
+  font-weight: 200;
+  margin-top: 5px;
+  text-align: left;
+  list-style: none;
+}
+.summary, .pricing, .specs {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.buy-btn:hover {
+  width: 60px;
+  height: 30px;
+  padding: 0px;
+  margin-top: 20px;
 }
