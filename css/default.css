@@ -244,14 +244,13 @@ h6 {
   padding: 0px 35px 0px 35px;
 }
 /* start custom css for space tier */
-#tierHead {
-  background-color: #F5F5F5;
-  width: 100%;
-}
 .purchase-tiers {
   position: relative;
   display: inline-block;
   border: 1px solid #ffffff;
+}
+.tier-head, .black-btn {
+  color: #080808 !important;
 }
 .tier-image {
   max-width: 100%;
@@ -298,6 +297,24 @@ h6 {
   margin-right: auto;
   margin-left: auto;
 }
+.ship-container {
+  background-color: #FAFAFA;
+  width: 100%;
+  height: 300px;
+}
+.ship {
+  margin-bottom: 50px;
+}
+.ship p {
+  font-size: 25px;
+  font-weight: 200;
+}
+.ship p, .ship h3 {
+  margin-top: 50px;
+}
+.table-container {
+  margin-top: 50px;
+}
 thead tr th {
   text-align: center;
   font-size: 30px;
@@ -323,7 +340,8 @@ td ul li {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-.buy-btn:hover {
+.buy-btn {
+  background-position: 0 center;
   width: 60px;
   height: 30px;
   padding: 0px;
