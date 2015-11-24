@@ -245,8 +245,24 @@ h6 {
   display: inline-block;
   border: 1px solid #ffffff;
 }
-.tier-head, .black-btn {
+#tierHead {
+  background-color: #FAFAFA;
+  width: 100%;
+  padding-bottom: 15px;
+}
+.tier-head {
   color: #080808 !important;
+}
+.black-nav:link, .black-nav:visited {
+  color: #080808;
+  font-weight: 200;
+  margin-left: 40px;
+  margin-right: 40px;
+  letter-spacing: 2px;
+}
+.black-list {
+  display: inline;
+  list-style: none;
 }
 .tier-image {
   max-width: 100%;
@@ -281,15 +297,13 @@ h6 {
 }
 #carousel-space-tier {
   background-color: #ffffff;
-  width: 1280px;
-  margin-top: 50px;
+  width: 100%;
   margin-right: auto;
   margin-bottom: 0px;
   margin-left: auto;
 }
 .carousel-inner .item img {
-  width: 1280px;
-  max-height: 700px;
+  width: 100%;
   margin-right: auto;
   margin-left: auto;
 }
@@ -329,6 +343,7 @@ tr td {
   text-align: left;
   margin-bottom: 15px;
   padding-bottom: 15px;
+  width: 400px;
 }
 td ul li {
   font-size: 18px;

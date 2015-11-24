@@ -3,9 +3,9 @@
   <head>
     <meta http-equiv="X-US-Compatible" content="IE=Edge">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
     <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
-    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
     <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
@@ -21,18 +21,12 @@
         <div id="logo" class="col-md-4">
           <h1><a class="index tier-head" href="index.html">Mars-One</a></h1> <!-- insert name of the mission -->
         </div> <!-- closes the header logo -->
-        <div id="nav-button" class="dropdown col-md-3 col-md-offset-5">
-          <button type="button" class="hidden-xs hidden-sm glyph black-btn btn btn-default" aria-label="Right Align" data-toggle="dropdown">
-            <span class="glyphicon glyphicon-align-justify" aria-hidden="true" aria-expanded="true"></span>
-          </button>
-        </div> <!-- closes the navbar -->
-        </div>
-        <hr>
-        <div class="row">
-          <div id="tier-fold" class="col-md-8 col-md-offset-2">
-            <h2 class="tier-meet">Explore our different tiers of space travel.</h2>
-            <p class="tier-hook">Find one that suits your needs.</p> <!-- insert the hook -->
-          </div> <!-- closes the fold -->
+       <div id="navBar" class="col-md-8">
+          <ul>
+            <li class="black-list"><a class="black-nav" href="space-tier.html">Space Tiers</a></li>
+            <li class="black-list"><a class="black-nav" href="pilots.html">Pilots</a></li>
+            <li class="black-list"><a class="black-nav" href="testimonial.html">Testimonials</a></li>
+          </ul>
         </div>
       </div>
     </div>
@@ -46,7 +40,7 @@
       <!-- Wrapper for slides -->
       <div class="carousel-inner" role="listbox">
         <div class="item active">
-          <img src="images/orion.jpg" alt="Orion spacecraft">
+          <img src="images/orion2.jpg" alt="Orion spacecraft">
           <div class="carousel-caption">
             <h4 class="purchase-text">The Orion</h4>
             <a class="purchase-button btn-default" href="#spacecraft-info" role="button">Learn more ></a>
@@ -81,7 +75,7 @@
       <div class="row">
         <div class="ship col-md-8 col-md-offset-2">
           <h3>Our ships are made to last.</h3>
-          <p>"Mars-One was built to provide a space travel experience unmatched."</p>
+          <p>"Mars-One was created to provide a space travel experience unmatched."</p>
           <p class="neill">Neill Armstrong, CEO Co-Founder</p>
         </div>
       </div> <!-- closes the space tier hook -->
