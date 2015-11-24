@@ -309,6 +309,10 @@ h6 {
 .ship p, .ship h3 {
   margin-top: 50px;
 }
+.neill {
+  font-size: 18px !important;
+  font-style: italic;
+}
 .table-container {
   margin-top: 50px;
 }
