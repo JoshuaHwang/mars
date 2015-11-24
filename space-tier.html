@@ -153,7 +153,7 @@
                   <ul class="pricing">
                     <li>1 passenges</li>
                     <li>3 passengers</li>
-                    <li>5 passengers</li>
+                    <li>7 passengers</li>
                     <li>
                       <!-- Button trigger modal -->
                       <button type="button" class="buy-btn btn btn-primary" data-toggle="modal" data-target="#buyModal">
@@ -167,12 +167,44 @@
                               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                               <h4 class="modal-title" id="buyModalLabel">Order form</h4>
                             </div>
-                            <div class="modal-body">
-                              ...
-                            </div>
+                            <form>
+                              <div class="form-group">
+                                <input type="email" class="email form-control" name="email" placeholder="Email">
+                              </div> <!-- closes email -->
+                              <div class="form-group">
+                                <input type="text" class="form-control" name="last-name" placeholder="Last name">
+                                <input type="text" class="form-control" name="first-name" placeholder="First name">
+                                <input type="text" class="form-control" name="company" placeholder="Company">
+                                <input type="text" class="form-control" name="address" placeholder="Address">
+                                <input type="text" class="form-control" name="country" placeholder="Country">
+                                <input type="text" class="form-control" name="continent" placeholder="Continent">
+                              </div> <!-- closes personal -->
+                              <div class="radio">
+                                <label>
+                                  <input type="radio" name="tierRadios" id="orionRadio" value="orion" checked>The Orion
+                                </label>
+                              </div>
+                              <div class="radio">
+                                <label>
+                                  <input type="radio" name="tierRadios" id="normandyRadio" value="normandy">The Normandy
+                                </label>
+                              </div>
+                              <div class="radio">
+                                <label>
+                                  <input type="radio" name="tierRadios" id="oneillRadio" value="oneill">The O'Neill
+                                </label>
+                              </div>
+                              <select class="passengers form-control">
+                                <option>1 passenger</option>
+                                <option>3 passenger</option>
+                                <option>7 passenger</option>
+                                <option>10 passenger</option>
+                                <option>15 passenger</option>
+                              </select>
+                            </form>
                             <div class="modal-footer">
-                              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                              <button type="button" class="btn btn-primary">Checkout</button>
+                              <button type="button" class="close btn btn-default" data-dismiss="modal">Close</button>
+                              <button type="button" class="checkout-btn btn btn-primary">Checkout</button>
                             </div>
                           </div>
                         </div>
@@ -190,24 +222,6 @@
                       <button type="button" class="buy-btn btn btn-primary" data-toggle="modal" data-target="#buyModal">
                         Buy
                       </button>
-                      <!-- but button modal -->
-                      <div class="modal fade" id="buyModal" tabindex="-1" role="dialog" aria-labelledby="buyModalLabel">
-                        <div class="modal-dialog" role="document">
-                          <div class="modal-content">
-                            <div class="modal-header">
-                              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                              <h4 class="modal-title" id="buyModalLabel">Order form</h4>
-                            </div>
-                            <div class="modal-body">
-                              ...
-                            </div>
-                            <div class="modal-footer">
-                              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                              <button type="button" class="btn btn-primary">Checkout</button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
                     </li>
                   </ul>
                 </td>
@@ -221,24 +235,6 @@
                       <button type="button" class="buy-btn btn btn-primary" data-toggle="modal" data-target="#buyModal">
                         Buy
                       </button>
-                      <!-- but button modal -->
-                      <div class="modal fade" id="buyModal" tabindex="-1" role="dialog" aria-labelledby="buyModalLabel">
-                        <div class="modal-dialog" role="document">
-                          <div class="modal-content">
-                            <div class="modal-header">
-                              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                              <h4 class="modal-title" id="buyModalLabel">Order form</h4>
-                            </div>
-                            <div class="modal-body">
-                              ...
-                            </div>
-                            <div class="modal-footer">
-                              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                              <button type="button" class="btn btn-primary">Checkout</button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
                     </li>
                   </ul>
                 </td>
