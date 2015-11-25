@@ -396,3 +396,23 @@ select {
   font-size: 18px;
   font-weight: 200;
 }
+/* start custom css for checkout page */
+.checkout-form {
+  margin-top: 30px;
+}
+.checkout-box {
+  width: 500px;
+  height: 500px;
+  border: 1px solid #F1F1F1;
+}
+.order-image, .order-label, .order-price, .due, .total-sum {
+  width: 240px;
+  display: inline-block;
+}
+.order-label p, .due p {
+  text-align: left;
+  margin-left: 20px;
+}
+.order-price, .total-sum {
+  text-align: right;
+}
