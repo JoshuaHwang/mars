@@ -35,7 +35,38 @@
                 <li><a class="nav-link" href="spacetiers.html">Space Tiers</a></li>
                 <li><a class="nav-link" href="pilots.html">Pilots</a></li>
                 <li><a class="nav-link" href="testimonials.html">Testimonials</a></li>
-                <li><a class="nav-link" href="#">Sign up</a></li>
+                <li>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="register-btn btn btn-default" data-toggle="modal" data-target="#register">
+                    Sign Up
+                  </button>
+                  <!-- Modal -->
+                  <div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="registerLabel">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                          <h4 class="modal-title" id="registerLabel">Explore new horizons.</h4>
+                        </div>
+                        <div class="modal-body">
+                          <form>
+                            <input type="text" class="form-control" name="name" placeholder="Full name">
+                            <input type="password" class="form-control" name="password" placeholder="Password">
+                            <input type="email" class="form-control" name="email" placeholder="Email">
+                            <input type="text" class="form-control" name="phone" placeholder="Phone number">
+                            <label>
+                              <input type="checkbox">  I would like to sign up for the newsletter
+                            </label>
+                          </form> <!-- sign up form goes here -->
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary">Submit</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
               </ul>
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->

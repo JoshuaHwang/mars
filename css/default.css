@@ -40,6 +40,18 @@ li {
 a:link, a:visited {
   text-decoration: none;
 }
+.register-btn {
+  background-color: transparent;
+  color: #ffffff;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+.form-control {
+  width: 400px;
+  margin-bottom: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
 button.modal-btn, button.modal-btn:hover {
   background-color: transparent;
   color: #ffffff;
@@ -143,6 +155,10 @@ footer .nav-list {
   margin-left: 10px;
   margin-right: 10px;
 }
+a.social, a.social:hover, a.social:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   #headerBackground {
@@ -178,6 +194,13 @@ footer .nav-list {
   .image-text {
     font-size: 25px;
   }
+  footer {
+    padding-top: 0px;
+  }
+  footer .nav-list {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
@@ -199,9 +222,19 @@ footer .nav-list {
   .image-text {
     font-size: 25px;
   }
+  #testimonial {
+    margin-top: 65px;
+    margin-bottom: 65px;
+  }
+  footer {
+    margin
+  }
 }
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+  #headerBackground {
+    min-height: 600px;
+  }
   .image-text {
     font-size: 25px;
   }
