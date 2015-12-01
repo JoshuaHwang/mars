@@ -17,24 +17,42 @@
   </head>
   <body>
     <div id="pilotHead" class="container">
-      <div class="row">
-        <div id="logo" class="col-md-4">
-          <h1 class="pilot-head"><a class="index" href="index.html">Mars-One</a></h1> <!-- insert name of the mission -->
-        </div> <!-- closes the header logo -->
-        <div id="navBar" class="col-md-8">
-          <ul>
-            <li class="nav-list"><a class="nav-link" href="space-tier.html">Space Tiers</a></li>
-            <li class="nav-list"><a class="nav-link" href="pilots.html">Pilots</a></li>
-            <li class="nav-list"><a class="nav-link" href="testimonial.html">Testimonials</a></li>
-          </ul>
-        </div>
-        <div class="row">
-          <div id="pilot-fold" class="col-md-8 col-md-offset-2">
-            <h2 class="pilot-meet">Meet your pilots</h2> <!-- insert the hook -->
-          </div> <!-- closes the fold -->
-        </div>
+      <div class="col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2">
+        <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="index.html">Mars-One</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <ul class="nav navbar-nav">
+                <li><a class="nav-link" href="space-tier.html">Space Tiers</a></li>
+                <li><a class="nav-link" href="pilots.html">Pilots</a></li>
+                <li><a class="nav-link" href="testimonial.html">Testimonials</a></li>
+                <li>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="register-btn btn btn-default" data-toggle="modal" data-target="#register">
+                    Sign Up
+                  </button>
+
+                </li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
       </div>
-    </div>
+      <div class="row">
+        <div id="fold" class="col-md-8 col-md-offset-2">
+          <p class="hook">Meet the Pilots.</p> 
+        </div> <!-- closes the fold -->
+      </div>
+    </div> <!-- closes the header -->
     <div class="container">
       <div class="pilot-row row">
         <div class="pilot col-md-4">
@@ -79,6 +97,32 @@
         </div>
       </div>
     </footer>
+    <!-- Modal -->
+    <div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="registerLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="registerLabel">Explore new horizons.</h4>
+          </div>
+          <div class="modal-body">
+            <form>
+              <input type="text" class="form-control" name="name" placeholder="Full name">
+              <input type="password" class="form-control" name="password" placeholder="Password">
+              <input type="email" class="form-control" name="email" placeholder="Email">
+              <input type="text" class="form-control" name="phone" placeholder="Phone number">
+              <label>
+                <input type="checkbox">  I would like to sign up for the newsletter
+              </label>
+            </form> <!-- sign up form goes here -->
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html> 
  
