@@ -325,7 +325,8 @@ table li {
   font-weight: 100;
   text-align: left;
 }
-.pricing {
+
+.specs, .pricing {
   padding-bottom: 5px;
 }
 .cart, .cart:hover {
