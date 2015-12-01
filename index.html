@@ -3,9 +3,9 @@
   <head>
     <meta http-equiv="X-US-Compatible" content="IE=Edge">
     <meta charset="UTF-8">
+    <meta name="viewport" width="width=device-width, initial-scale=1">
     <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
-    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
     <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
@@ -17,50 +17,29 @@
   </head>
   <body>
     <div id="headerBackground" class="container">
-      <div class="row">
-        <div id="logo" class="col-md-4">
-          <h1 class="main-head">Mars-One</h1> <!-- insert name of the mission -->
-        </div> <!-- closes the header logo -->
-        <div id="navBar" class="col-md-8">
-          <ul>
-            <li class="nav-list"><a class="nav-link" href="space-tier.html">Space Tiers</a></li>
-            <li class="nav-list"><a class="nav-link" href="pilots.html">Pilots</a></li>
-            <li class="nav-list"><a class="nav-link" href="testimonial.html">Testimonials</a></li>
-            <li class="nav-list">
-              <!-- Button trigger modal -->
-              <button type="button" class="modal-btn btn btn-default" data-toggle="modal" data-target="#register">
-                Sign Up
+      <div class="col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2">
+        <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
               </button>
-              <!-- Modal -->
-              <div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="registerLabel">
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                      <h4 class="modal-title" id="registerLabel">Explore new horizons.</h4>
-                    </div>
-                    <div class="modal-body">
-                      <form>
-                        <input class="form-sign" type="text" name="username" size="30" maxlength="50" placeholder="Full name">
-                        <input class="form-sign" type="email" name="email" placeholder="Email">
-                        <input class="form-sign" type="password" name="password" placeholder="Password">
-                      </form> <!-- form for sign up ends here -->
-                       <div class="checkbox">
-                          <label>
-                            <input type="checkbox">Subscribe to our newsletter
-                          </label>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="form-btn btn btn-default" data-dismiss="modal">Close</button>
-                      <button type="button" class="submit-btn btn btn-default">Submit</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </li> <!-- put the modal for signup here -->
-          </ul>
-        </div> <!-- closes the navbar -->
+              <a class="navbar-brand" href="index.html">Mars-One</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <ul class="nav navbar-nav">
+                <li><a class="nav-link" href="spacetiers.html">Space Tiers</a></li>
+                <li><a class="nav-link" href="pilots.html">Pilots</a></li>
+                <li><a class="nav-link" href="testimonials.html">Testimonials</a></li>
+                <li><a class="nav-link" href="#">Sign up</a></li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
       </div>
       <div class="row">
         <div id="fold" class="col-md-8 col-md-offset-2">
@@ -110,7 +89,7 @@
             <ul>
               <li class="nav-list"><a class="footer-links" href="#">BUSINESS</a></li> <!-- insert the navbar links here -->
               <li class="nav-list"><a class="footer-links" href="#">CONTACT US</a></li>
-              <li class="nav-list"><a class="footer-links" href="#">CAREERS</a></li>
+              <li class="nav-list hidden-xs"><a class="footer-links" href="#">CAREERS</a></li>
               <li class="nav-list"><a class="footer-links" href="#">TERMS OF USE</a></li>
               <li class="nav-list">
                 <a class="social hidden-xs" href="#"><i class="fa fa-facebook fa-2x"></i></a>

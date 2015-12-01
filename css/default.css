@@ -1,24 +1,44 @@
 * {
   text-align: center;
 }
-a:link, a:visited {
-  text-decoration: none;
-}
 #headerBackground {
   background-image: url('../images/the-martian.jpg');
   background-repeat: no-repeat;
-  background-size: cover;
   width: 100%;
-  height: 720px;
-  margin-bottom: 30px;
+  height: auto;
 }
-#logo, #fold, #navbar {
+.navbar-default {
+  background-color: transparent;
+  border: none;
+}
+.navbar-default .navbar-brand, .navbar-default .navbar-brand:hover {
+   color: #ffffff;
+   font-size: 30px;
+   font-weight: 100;
+   letter-spacing: 3px;
+}
+.navbar-default .navbar-nav > li > a, .navbar-default .navbar-nav:hover > li > a {
   color: #ffffff;
+  font-size: 15px;
+  font-weight: 200;
+  margin-top: 3px;
+  margin-bottom: 10px;
+  margin-left: 20px;
 }
-h1.main-head, h1.pilot-head {
-  font-size: 40px;
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #ffffff;
+}
+h1 {
   font-weight: 100;
   letter-spacing: 5px;
+  float: left;
+}
+li {
+  list-style-type: none;
+  display: inline;
+}
+a:link, a:visited {
+  text-decoration: none;
 }
 button.modal-btn, button.modal-btn:hover {
   background-color: transparent;
@@ -28,67 +48,25 @@ button.form-button, button.form-btn:hover {
   background-color: transparent;
   color: #080808;
 }
-#registerLabel {
-  font-size: 25px;
-  font-weight: 100;
-}
-form input {
-  width: 300px;
-  text-align: left;
-  margin-top: 20px;
-}
-#fold {
-  margin-top: 100px;
-}
-h2 {
-  font-size: 45px;
-  font-weight: 100;
-}
-.hook {
-  font-size: 65px;
-  font-weight: 100;
-  letter-spacing: 5px;
-}
-.nav-list {
-  display: inline;
-  list-style: none; /* may move this higher or lower */
-}
-#navBar {
-  margin-top: 30px;
-}
 .nav-link:link, .nav-link:visited, .footer-links:link, .footer-links:visited {
   color: #ffffff;
-  font-weight: 200;
-  margin-left: 40px;
-  margin-right: 40px;
-  letter-spacing: 2px;
 }
 .btn-default:link, .btn-default:hover, .btn-default:active, .btn-default:visited, .sign-up.btn {
   background-color: transparent;
   color: #ffffff;
-  font-weight: 200;
-  letter-spacing: 1px;
 }
-#mission {
-  margin-top: 50px;
+#fold {
+  color: #ffffff;
   margin-bottom: 50px;
 }
-h3 {
-  font-size: 45px;
+.journey {
+  font-size: 25px;
   font-weight: 100;
-  margin-bottom: 50px;
 }
-.statement {
-  font-size: 21px;
-  font-weight: 200;
-  text-align: left;
-}
-#main {
-  margin-top: 50px;
-  margin-bottom: 50px;
-  margin-right: auto;
-  margin-left: auto;
-  width: 100%;
+.hook {
+  font-size: 30px;
+  font-weight: 100;
+  letter-spacing: 2px;
 }
 .learn-more {
   position: relative;
@@ -99,20 +77,39 @@ h3 {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  padding: 10px 0;
-  font-size: 20px;
-  text-align: center;
   color: #ffffff;
-  margin-top: -10px;
+  width: 100%;
 }
 .image-text {
   color: #ffffff;
-  font-size: 25px;
   font-weight: 100;
   margin-top: 45px;
   margin-bottom: 20px;
   letter-spacing: 2px;
+}
+.image-responsive {
+  width: 100%;
+  height: auto;
+}
+.statement {
+  font-size: 16px;
+  font-weight: 200;
+  text-align: left;
+  margin-right: auto;
+  margin-left: auto;
+}
+#mission {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+h3 {
+  font-size: 35px;
+  font-weight: 100;
+  margin-bottom: 20px;
+}
+.statement {
+  font-size: 18px;
+  font-weight: 200;
 }
 #testimonial {
   margin-top: 50px;
@@ -140,279 +137,72 @@ footer {
   width: 100%;
   height: 80px;
   margin-top: 50px;
-  padding-top: 20px;
-}
-.social:link, .social:hover, .social:visited {
-  color: #ffffff;
-  margin-left: 15px;
-}
-h6 {
-  font-size: 27px;
-  font-weight: 100;
-  display: inline;
-  float: left;
-  color: #ffffff;
-}
-/* Begin custom CSS for pilot page */
-#pilotHead {
-  background-image: url('../images/milkyway.jpg');
-  opacity: .90;
-  background-size: cover;
-  width: 100%;
-  height: 300px;
-  margin-bottom: 50px;
-}
-.glyph {
-  background-color: transparent;
-  color: #ffffff;
-  border: none;
-  margin-top: 20px;
-  margin-left: 80px;
-}
-.index:link, .index:visited {
-  color: #ffffff;
-  font-weight: 100;
-  margin-left: 40px;
-  margin-right: 40px;
-  letter-spacing: 2px;
-}
-.pilot-meet {
-  font-size: 70px;
-  color: #ffffff;
-  margin-top: 50px;
-}
-.pilot-row {
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-.pilot-name {
-  font-size: 30px;
-  font-weight: 200;
-  letter-spacing: 2px;
-  margin-top: 35px;
-  margin-bottom: 35px;
-}
-.pilot-bio, .martian-test {
-  font-size: 16px;
-  text-align: left
-}
-/* being custom CSS for testimonials */
-#testimonialHead {
-  background-image: url('../images/mann.jpg');
-  background-size: cover;
-  width: 100%;
-  height: 300px;
-}
-.profile-row {
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-.testimonial-hook {
-  font-size: 70px;
-  color: #ffffff;
-}
-.profile {
-  background-color: #f8f8f8;
-  padding-top: 40px;
-  border: 1px solid #ffffff;
-  margin-bottom: 30px;
-}
-.bio-head {
-  margin-top: 50px;
-  font-size: 35px;
-  font-weight: 100;
-}
-.martian-test {
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-.sponsor-row {
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-.sponsors {
-  font-size: 45px;
-  font-weight: 100;
-  margin-bottom: 30px;
-}
-.sponsor-logo {
-  display: inline-block;
-  padding: 0px 35px 0px 35px;
-}
-/* start custom css for space tier */
-.purchase-tiers {
-  position: relative;
-  display: inline-block;
-  border: 1px solid #ffffff;
-}
-#tierHead {
-  background-color: #FAFAFA;
-  width: 100%;
-  padding-bottom: 15px;
-}
-.tier-head {
-  color: #080808 !important;
-}
-.black-nav:link, .black-nav:visited {
-  color: #080808;
-  font-weight: 200;
-  margin-left: 40px;
-  margin-right: 40px;
-  letter-spacing: 2px;
-}
-.black-list {
-  display: inline;
-  list-style: none;
-}
-.tier-image {
-  max-width: 100%;
-  height: auto;
-  width: auto;
-}
-.tier-hook {
-  font-size: 40px;
-  font-weight: 100;
-}
-.purchase {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  font-size: 20px;
-  text-align: center;
-  color: #ffffff;
-  padding-bottom: 50px;
-}
-.purchase-text {
-  font-size: 42px;
-  font-weight: 200;
-  letter-spacing: 2px;
-}
-.purchase-button {
-  font-size: 30px;
-  font-weight: 100 !important;
-}
-.tier-analysis {
-  text-align: left;
-}
-#carousel-space-tier {
-  background-color: #ffffff;
-  width: 100%;
-  margin-right: auto;
-  margin-bottom: 0px;
-  margin-left: auto;
-}
-.carousel-inner .item img {
-  width: 100%;
-  margin-right: auto;
-  margin-left: auto;
-}
-.ship-container {
-  background-color: #FAFAFA;
-  width: 100%;
-  height: 350px;
   padding-top: 30px;
 }
-.ship {
-  margin-bottom: 50px;
+footer .nav-list {
+  margin-left: 10px;
+  margin-right: 10px;
 }
-.ship p {
-  font-size: 25px;
-  font-weight: 200;
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  #headerBackground {
+    background-size: cover;
+  }
+  .navbar-default .navbar-brand, .navbar-default .navbar-brand:hover {
+   font-size: 35px;
+  }
+  .navbar-default .navbar-nav > li > a, .navbar-default .navbar-nav:hover > li > a {
+    font-size: 16px;
+    font-weight: 200;
+    margin-bottom: 10px;
+    margin-left: 20px;
+  }
+  #fold {
+    margin-top: 30px;
+    margin-bottom: 60px;
+  }
+  .journey {
+    font-size: 35px;
+  }
+  .hook {
+    font-size: 40px;
+  }
+  #mission h3 {
+    font-size: 40px;
+    font-weight: 100;
+  }
+  .statement {
+    width: 600px;
+    font-size: 18px;
+  }
+  .image-text {
+    font-size: 25px;
+  }
 }
-.ship p, .ship h3 {
-  margin-top: 50px;
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  #headerBackground {
+    min-height: 550px;
+  }
+  .journey {
+    font-size: 45px;
+  }
+  .hook {
+    font-size: 50px;
+  }
+  #mission h3 {
+    font-size: 45px;
+  }
+  .statement {
+    font-size: 20px;
+  }
+  .image-text {
+    font-size: 25px;
+  }
 }
-.neill {
-  font-size: 18px !important;
-  font-style: italic;
-}
-.table-container {
-  margin-top: 50px;
-}
-thead tr th {
-  text-align: center;
-  font-size: 30px;
-  font-weight: 200;
-}
-.td-title {
-  font-size: 25px;
-  font-weight: 100;
-}
-tr td {
-  text-align: left;
-  margin-bottom: 15px;
-  padding-bottom: 15px;
-  width: 400px;
-}
-td ul li {
-  font-size: 18px;
-  font-weight: 200;
-  margin-top: 5px;
-  text-align: left;
-  list-style: none;
-}
-.summary, .pricing, .specs {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-.buy-btn {
-  background-position: 0 center;
-  width: 60px;
-  height: 30px;
-  padding: 0px;
-  margin-top: 20px;
-}
-.form-control {
-  width: 400px;
-  margin-top: 2px;
-  margin-right: auto;
-  margin-left: auto;
-}
-.email {
-  margin-top: 15px;
-}
-.passengers {
-  width: 200px;
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
-.radio {
-  display: inline;
-  margin-right: 25px;
-  margin-bottom: 15px;
-  margin-top: 30px;
-}
-select {
-  margin-top: 15px;
-}
-.checkout-btn {
-  background-position: 0 center;
-  margin-top: 20px;
-}
-.modal-footer .close {
-  float: left;
-  margin-top: 25px;
-  font-size: 18px;
-  font-weight: 200;
-}
-/* start custom css for checkout page */
-.checkout-form {
-  margin-top: 30px;
-}
-.checkout-box {
-  width: 500px;
-  height: 500px;
-  border: 1px solid #F1F1F1;
-}
-.order-image, .order-label, .order-price, .due, .total-sum {
-  width: 240px;
-  display: inline-block;
-}
-.order-label p, .due p {
-  text-align: left;
-  margin-left: 20px;
-}
-.order-price, .total-sum {
-  text-align: right;
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .image-text {
+    font-size: 25px;
+  }
 }
