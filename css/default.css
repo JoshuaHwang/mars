@@ -325,9 +325,15 @@ table li {
   font-weight: 100;
   text-align: left;
 }
-.checkout-btn, .buy-btn {
-  background-position: 0 center;
-  margin-top: 20px;
+.pricing {
+  padding-bottom: 5px;
+}
+.cart, .cart:hover {
+  text-decoration: none;
+  border-radius: 10%;
+  color: #ffffff;
+  background-color: #337AB7;
+  padding: 7px;
 }
   /* Small devices (tablets, 768px and up) */
   @media (min-width: 768px) {
