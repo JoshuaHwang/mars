@@ -17,17 +17,60 @@
   </head>
   <body>
     <div id="tierHead" class="container">
-      <div class="row">
-        <div id="logo" class="col-md-4">
-          <h1><a class="index tier-head" href="index.html">Mars-One</a></h1> <!-- insert name of the mission -->
-        </div> <!-- closes the header logo -->
-       <div id="navBar" class="col-md-8">
-          <ul>
-            <li class="black-list"><a class="black-nav" href="space-tier.html">Space Tiers</a></li>
-            <li class="black-list"><a class="black-nav" href="pilots.html">Pilots</a></li>
-            <li class="black-list"><a class="black-nav" href="testimonial.html">Testimonials</a></li>
-          </ul>
-        </div>
+      <div class="col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2">
+        <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle black-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar black-icon"></span>
+                <span class="icon-bar black-icon"></span>
+                <span class="icon-bar black-icon"></span>
+              </button>
+              <a class="navbar-brand black" href="index.html">Mars-One</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <ul class="nav navbar-nav black-nav">
+                <li class="nav-li"><a class="nav-link" href="space-tier.html">Space Tiers</a></li>
+                <li class="nav-li"><a class="nav-link" href="pilots.html">Pilots</a></li>
+                <li class="nav-li"><a class="nav-link" href="testimonial.html">Testimonials</a></li>
+                <li>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="register-btn black-btn btn btn-default" data-toggle="modal" data-target="#register">
+                    Sign Up
+                  </button>
+                  <!-- Modal -->
+                  <div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="registerLabel">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                          <h4 class="modal-title" id="registerLabel">Explore new horizons.</h4>
+                        </div>
+                        <div class="modal-body">
+                          <form>
+                            <input type="text" class="form-control" name="name" placeholder="Full name">
+                            <input type="password" class="form-control" name="password" placeholder="Password">
+                            <input type="email" class="form-control" name="email" placeholder="Email">
+                            <input type="text" class="form-control" name="phone" placeholder="Phone number">
+                            <label>
+                              <input type="checkbox">  I would like to sign up for the newsletter
+                            </label>
+                          </form> <!-- sign up form goes here -->
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary">Submit</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
       </div>
     </div>
     <div id="carousel-space-tier" class="carousel slide" data-ride="carousel">
@@ -75,7 +118,7 @@
       <div class="row">
         <div class="ship col-md-8 col-md-offset-2">
           <h3>Our ships are made to last.</h3>
-          <p>"Mars-One was created to provide a space travel experience unmatched."</p>
+          <p class="neill-quote">"Mars-One was created to provide a space travel experience unmatched."</p>
           <p class="neill">Neill Armstrong, CEO Co-Founder</p>
         </div>
       </div> <!-- closes the space tier hook -->
@@ -86,9 +129,9 @@
           <table id="spacecraft-info" class="table">
             <thead>
               <tr>
-                <th>The Orion</th>
-                <th>The Normandy</th>
-                <th>The O'Neill</th>
+                <th class="table-title">The Orion</th>
+                <th class="table-title">The Normandy</th>
+                <th class="table-title">The O'Neill</th>
               </tr>
             </thead>
             <tbody>
@@ -97,20 +140,20 @@
               </tr>
               <tr>
                 <td>
-                  <ul class="summary">
-                    <li>Designed to get you there quick, the Orion is our smallest but fastest spacecraft. What you give up in comfort you gain in time. This one's for the go-getters.
+                  <ul>
+                    <li class="summary">Designed to get you there quick, the Orion is our smallest but fastest spacecraft. What you give up in comfort you gain in time. This one's for the go-getters.
                     </li>
                   </ul>
                 </td>
                 <td>
-                  <ul class="summary">
-                    <li>Travel in retro style as you fly in a spacecraft designed to feel like the days of 747's. With enough cabin room to feel comfortable, the Normandy will get you to Mars with enough time to enjoy the view.
+                  <ul>
+                    <li class="summary">Travel in retro style as you fly in a spacecraft designed to feel like the days of 747's. With enough cabin room to feel comfortable, the Normandy will get you to Mars with enough time to enjoy the view.
                     </li>
                   </ul>
                 </td>
                 <td>
-                  <ul class="summary">
-                    <li>Gravity, atmosphere, comfort. The O'Neill was created to look and feel like the mother planet Earth, providing a level of familiarity so real you won't even notice the trip. </li>
+                  <ul>
+                    <li class="summary">Gravity, atmosphere, comfort. The O'Neill was created to look and feel like the mother planet Earth, providing a level of familiarity so real you won't even notice the trip. </li>
                   </ul>
                 </td>
               </tr>
@@ -145,10 +188,10 @@
               </tr>
               <tr>
                 <td>
-                  <ul class="pricing">
-                    <li>1 passenges</li>
-                    <li>3 passengers</li>
-                    <li>7 passengers</li>
+                  <ul>
+                    <li class="pricing">1 passenges</li>
+                    <li class="pricing">3 passengers</li>
+                    <li class="pricing">7 passengers</li>
                     <li>
                       <!-- Button trigger modal -->
                       <button type="button" class="buy-btn btn btn-primary" data-toggle="modal" data-target="#buyModal">
@@ -245,17 +288,17 @@
           <div id="footer" class="col-md-12">
             <h6 class="hidden-xs">Mars-One</h6>
             <ul>
-              <li class="nav-list"><a class="footer-links" href="#">BUSINESS</a></li> <!-- insert the navbar links here -->
-              <li class="nav-list"><a class="footer-links" href="#">CONTACT US</a></li>
-              <li class="nav-list"><a class="footer-links" href="#">CAREERS</a></li>
-              <li class="nav-list"><a class="footer-links" href="#">TERMS OF USE</a></li>
-              <li class="nav-list">
+              <li class="nav-list nav-li"><a class="footer-links" href="#">BUSINESS</a></li> <!-- insert the navbar links here -->
+              <li class="nav-list nav-li"><a class="footer-links" href="#">CONTACT US</a></li>
+              <li class="nav-list nav-li"><a class="footer-links" href="#">CAREERS</a></li>
+              <li class="nav-list nav-li"><a class="footer-links" href="#">TERMS OF USE</a></li>
+              <li class="nav-list nav-li">
                 <a class="social hidden-xs" href="#"><i class="fa fa-facebook fa-2x"></i></a>
               </li>
-              <li class="nav-list">
+              <li class="nav-list nav-li">
                 <a class="social hidden-xs" href="#"><i class="fa fa-twitter fa-2x"></i></a> <!-- social media icons -->
               </li>
-              <li class="nav-list">
+              <li class="nav-list nav-li">
                 <a class="social hidden-xs" href="#"><i class="fa fa-instagram fa-2x"></i></a>
               </li>
             </ul>
