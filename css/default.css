@@ -191,6 +191,9 @@ a.social, a.social:hover, a.social:visited {
   width: 100%;
   height: auto;
 }
+.black-hook {
+  color: #080808;
+}
 .profile-row {
   margin-bottom: 50px;
   margin-top: 50px;
@@ -252,7 +255,7 @@ a.social, a.social:hover, a.social:visited {
 .navbar-default .black-toggle {
   margin-top: 20px;
 }
-.black-btn {
+.black-btn, .black-btn:hover {
   background-color: transparent;
   color: #080808;
   margin-left: 20px;
