@@ -235,6 +235,12 @@ a.social, a.social:hover, a.social:visited {
   #headerBackground {
     min-height: 600px;
   }
+  .journey {
+    font-size: 60px;
+  }
+  .hook {
+    font-size: 70px;
+  }
   .image-text {
     font-size: 25px;
   }
