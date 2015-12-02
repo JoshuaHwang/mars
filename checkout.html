@@ -47,45 +47,70 @@
         </div>
       </div>
     </div>
+    <hr>
     <div class="container">
       <div class="row">
         <div class="form">
-          <div class="col-md-4">
+          <div class="firstcol col-md-4">
             <div class="checkout-form form-group">
               <h2 class="custom-info">1. Customer information</h2>
+              <label for="email">Email:</label>
               <input type="email" class="form-control" name="email" placeholder="Email">
             </div>
             <div class="form-group">
               <h2 class="shipping-info">2. Billing address</h2>
-              <input type="text" class="form-control" name="lastname" size="15" placeholder="Last name">
-              <input type="text" class="form-control" name="firstname" size="15" placeholder="First name">
-              <input type="text" class="form-control" name="middlename" size="15" placeholder="Middle name (optional)">
+              <div class="fifties">
+                <label for="lastname">Last name:</label>
+                <input type="text" class="form-control" name="lastname" size="15" placeholder="Last name">
+              </div>
+              <div class="fifties fifties-right">
+                <label for="firstname">First name:</label>
+                <input type="text" class="form-control" name="firstname" size="15" placeholder="First name">
+              </div>
+              <div class="fifties2">
+                <label for="middlename">Middle name:</label>
+                <input type="text" class="form-control" name="middlename" size="15" placeholder="Middle name (optional)">
+              </div>
+              <div class="fifties2 fifties-right">
+                <label for="phone">Phone number:</label>
+                <input type="text" class="form-control" name="phone" placeholder="Phone number">
+              </div>
+              <label for="company">Company:</label>
               <input type="text" class="form-control" name="company" placeholder="Company (optional)">
+              <label for="address">Address:</label>
               <input type="text" class="form-control" name="address" placeholder="Address">
-              <select class="form-control" placeholder="country">
-                <option>United States</option>
-                <option>France</option>
-                <option>Korea</option>
-                <option>Brazil</option>
-                <option>Nigeria</option>
-                <option>Melbourne</option>
-              </select>
-              <select class="form-control" placeholder="continent">
-                <option>North America</option>
-                <option>South America</option>
-                <option>Europe</option>
-                <option>Asia</option>
-                <option>Australia</option>
-                <option>Africa</option>
-              </select>
-              <input type="text" class="form-control" name="postal" placeholder="Postal code">
-              <input type="text" class="form-control" name="phone" placeholder="Phone number">
+              <div class="thirties">
+                <label for="country">Country:</label>
+                <select class="form-control" placeholder="country">
+                  <option>United States</option>
+                  <option>France</option>
+                  <option>Korea</option>
+                  <option>Brazil</option>
+                  <option>Nigeria</option>
+                  <option>Melbourne</option>
+                </select>
+              </div>
+              <div class="thirties thirties-right">
+                <label for="continent">Continent:</label>
+                <select class="form-control" placeholder="continent">
+                  <option>North America</option>
+                  <option>South America</option>
+                  <option>Europe</option>
+                  <option>Asia</option>
+                  <option>Australia</option>
+                  <option>Africa</option>
+                </select>
+              </div>
+              <div class="thirties thirties-right">
+                <label for="postal">Postal code:</label>
+                <input type="text" class="thirds form-control" name="postal" placeholder="Postal code">
+              </div>
               <label>
                 <input type="checkbox" checked> Use as shipping address
               </label>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="secondcol col-md-4">
             <div class="shipping">
               <h3>3. Shipping method</h3>
               <div class="shipping-methods">
@@ -114,19 +139,22 @@
             <div class="payment">
               <h3>4. Payment method</h3>
               <div class="credit-cards">
-                <img src="images/amex.png" alt="American Express">
-                <img src="images/visa.png" alt="Visa">
-                <img src="images/discover.png" alt="Discover">
-                <img src="images/mastercard.png" alt="Mastercard">
+                <img src="images/amex.png" class="card-logo" alt="American Express">
+                <img src="images/visa.png" class="card-logo" alt="Visa">
+                <img src="images/discover.png" class="card-logo" alt="Discover">
+                <img src="images/mastercard.png" class="card-logo" alt="Mastercard">
               </div>
               <div class="card-number">
+                <label for="cardnumber">Credit card:</label>
                 <input type="text" class="form-control" name="cardnumber" placeholder="Credit card">
+                <label for="expiration">Expiration date:</label>
                 <input type="text" class="form-control" name="expiration" placeholder="MMYYYY">
-                <input type="text" class="form-control" name="security" placeholder="Security number">
+                <label for="cvn">Card verification number:</label>
+                <input type="text" class="form-control" name="cvn" placeholder="CVN">
               </div>
             </div> <!-- closes the payment -->
           </div>
-          <div class="col-md-4">
+          <div class="thirdcol col-md-4">
             <div class="review">
               <h4>5. Review your flight</h4>
               <div class="craft-type">
@@ -138,7 +166,7 @@
                     <p id="spacecraft-name">The Orion</p>
                   </div>
                   <div class="control-quantity">
-                    <input type="text" class="form-control" maxlength="3">
+                    <input type="text" class="quantity-field form-control" maxlength="3">
                     <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
                     <span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
                     <p id="cost">$0.00</p>

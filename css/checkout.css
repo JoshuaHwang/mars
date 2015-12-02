@@ -1,1 +1,82 @@
- 
+
+h1 {
+  font-weight: 200;
+}
+h2, h3, h4 {
+  font-size: 25px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+label {
+  font-size: 13px;
+  font-weight: 400;
+}
+input {
+  margin-bottom: 10px;
+}
+.card-logo {
+  margin-bottom: 20px;
+}
+.fedex {
+  float: left;
+}
+.fedex-price {
+  text-align: right;
+  font-weight: 500;
+}
+.quantity-field {
+  width: 50px;
+  height: 30px;
+}
+.spacecraft {
+  width: 100px;
+  height: 75px;
+  border: 1px solid #080808;
+  display: inline-block;
+}
+.quantity {
+  display: inline-block;
+  width: 300px;
+  height: 75px;
+}
+footer {
+  width: 100%;
+  height: 80px;
+}
+/* ---- Small devices (tablets, 768px and up) ---- */
+  @media (min-width: 768px) {
+    .fifties, .fifties2 {
+      display: inline-block;
+      width: 48%;
+    }
+    .fifties-right, .thirties-right {
+      margin-left: 10px;
+    }
+    .thirties {
+      display: inline-block;
+      width: 32%;
+    }
+    .firstcol, .secondcol {
+      margin-bottom: 30px;
+    }
+  }
+/* ---- Medium devices (desktops, 992px and up) ---- */
+  @media (min-width: 992px) {
+    .fifties, .fifties2 {
+      display: block;
+      width: 100%;
+    }
+    .fifties-right, .thirties-right {
+      margin-left: 0px;
+    }
+    .thirties {
+      display: block;
+      width: 100%;
+    }
+    .firstcol, .secondcol {
+      border-right: 1px dotted black;
+    }
+    .secondcol, .thirdcol {
+      height: 814px;
+    }
+  }
