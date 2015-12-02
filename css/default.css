@@ -337,50 +337,7 @@ table li {
   padding: 7px 10px 7px 10px;
 }
 /* Custom CSS for checkout page */
-#checkout-container {
-  margin-top: 30px;
-}
-.checkout-logo {
-  color: #080808;
-  
-}font-size: 30px;
-  font-weight: 100;
-  letter-spacing: 3px;
-  margin-top: 10px;
-.welcome {
-  margin-bottom: 20px;
-}
-.form-box {
-  width: 450px;
-  margin-right: auto; 
-  margin-left: auto;
-}
-.custom-info, .shipping-info {
-  font-size: 20px;
-  text-align: left;
-  margin-left: 10px;
-}
-.checkout-form {
-  margin-bottom: 30px;
-}
-.checkout-box {
-  margin-top: 40px;
-  width: 450px;
-  margin-right: auto; 
-  margin-left: auto;
-}
-.order-label, .due {
-  float: left;
-}
-.order-price, .total-sum {
-  float: right;
-}
-#total {
-  clear: both;
-}
-.checkout-done {
-  margin-top: 20px;
-}
+
   /* Small devices (tablets, 768px and up) */
   @media (min-width: 768px) {
     #headerBackground {
