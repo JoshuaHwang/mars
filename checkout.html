@@ -18,20 +18,22 @@
     <div class="container">
       <div class="row">
         <div class="col-md-4">
-          <h1>Mars-One</h1>
+          <a class="checkout-logo" href="index.html">Mars-One</a>
         </div> <!-- closes the logo -->
       </div>
     </div> <!-- closes the header -->
-    <div class="container">
+    <hr>
+    <div id="checkout-container" class="container">
       <div class="row">
-        <div class="col-md-7">
+        <div class="form-box col-md-7">
+          <h2 class="welcome">Welcome aboard.</h2>
           <form>
             <div class="checkout-form form-group">
-              <p class="checkout-subhead">Customer information</p>
+              <p class="custom-info">Customer information</p>
               <input type="email" class="form-control" name="email" placeholder="Email">
             </div>
             <div class="form-group">
-              <p class="checkout-subhead">SHIPPING ADDRESS</p>
+              <p class="shipping-info">Shipping address</p>
               <input type="text" class="form-control" name="lastname" size="15" placeholder="Last name">
               <input type="text" class="form-control" name="firstname" size="15" placeholder="First name">
               <input type="text" class="form-control" name="lastname" size="15" placeholder="Last name">
@@ -67,28 +69,32 @@
               <p>$0.00</p>
             </div>
             <hr>
-            <div class="order-label">
-              <p>Subtotal</p>
-              <p>Shipping</p>
-              <p>Taxes</p>
-              <hr>
-              <p>Total</p>
-            </div>
-            <div class="order-price">
-              <p>$0.00</p>
-              <p>--</p>
-              <p>$0.00</p>
-              <hr>
-              <p>$0.00</p>
+            <div id="subtotal">
+              <div class="order-label">
+                <p>Subtotal</p>
+                <p>Shipping</p>
+                <p>Taxes</p>
+                <hr>
+                <p>Total</p>
+              </div>
+              <div class="order-price">
+                <p>$0.00</p>
+                <p>--</p>
+                <p>$0.00</p>
+                <hr>
+                <p>$0.00</p>
+              </div>
             </div>
             <hr>
-            <div class="due">
-              <p>Payment due</p>
+            <div id="total">
+              <div class="due">
+                <p>Payment due</p>
+              </div>
+              <div class="total-sum">
+                <p>$0.00</p>
+                <button type="button" class="btn checkout-done btn-default">Checkout</button>
+              </div>
             </div>
-            <div class="total-sum">
-              <p>$0.00</p>
-            </div>
-            <button type="button" class="btn btn-default">Checkout</button>
           </div>
         </div> <!-- closes the checkout side -->
       </div>
