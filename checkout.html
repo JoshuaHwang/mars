@@ -53,12 +53,12 @@
         <div class="form">
           <div class="firstcol col-md-4">
             <div class="checkout-form form-group">
-              <h2 class="custom-info">1. Customer information</h2>
+              <h2 class="custom-info"><span class="number">1.</span> Customer information</h2>
               <label for="email">Email:</label>
               <input type="email" class="form-control" name="email" placeholder="Email">
             </div>
             <div class="form-group">
-              <h2 class="shipping-info">2. Billing address</h2>
+              <h2 class="shipping-info"><span class="number">2.</span> Billing address</h2>
               <div class="fifties">
                 <label for="lastname">Last name:</label>
                 <input type="text" class="form-control" name="lastname" size="15" placeholder="Last name">
@@ -112,7 +112,7 @@
           </div>
           <div class="secondcol col-md-4">
             <div class="shipping">
-              <h3>3. Shipping method</h3>
+              <h3><span class="number">3.</span> Shipping method</h3>
               <div class="shipping-methods">
                 <div class="ground">
                   <div class="fedex">
@@ -137,12 +137,12 @@
               </div> <!-- closes the shipping methods -->
             </div> <!-- closes the shipping -->
             <div class="payment">
-              <h3>4. Payment method</h3>
+              <h3><span class="number">4.</span> Payment method</h3>
               <div class="credit-cards">
-                <img src="images/amex.png" class="card-logo" alt="American Express">
-                <img src="images/visa.png" class="card-logo" alt="Visa">
-                <img src="images/discover.png" class="card-logo" alt="Discover">
-                <img src="images/mastercard.png" class="card-logo" alt="Mastercard">
+                <img src="creditcards/amex.png" class="card-logo" alt="American Express">
+                <img src="creditcards/visa.png" class="card-logo" alt="Visa">
+                <img src="creditcards/discover.png" class="card-logo" alt="Discover">
+                <img src="creditcards/mastercard.png" class="card-logo" alt="Mastercard">
               </div>
               <div class="card-number">
                 <label for="cardnumber">Credit card:</label>
@@ -156,7 +156,7 @@
           </div>
           <div class="thirdcol col-md-4">
             <div class="review">
-              <h4>5. Review your flight</h4>
+              <h4><span class="number">5.</span> Review your flight</h4>
               <div class="craft-type">
                 <div class="spacecraft">
                   <img src="#" id="spaceTierOrder" alt="#">
@@ -174,24 +174,22 @@
                   </div>
                 </div> <!-- closes the quantity -->
               </div> <!-- closes craft type -->
-              <div class="subtotal">
-                <div class="subtotal-row">
-                  <div class="subtotal-name">
-                    <p>Subtotal:</p>
-                  </div>
-                  <div class="subtotal-price">
-                    <p>$0.00</p>
-                  </div>
-                </div> <!-- closes the subtotal row -->
-                <div class="shipping-row">
-                  <div class="shipping-name">
-                    <p>Shipping:</p>
-                  </div>
-                  <div class="shipping-price">
-                    <p>$0.00</p>
-                  </div>
-                </div> <!-- closes the shipping subtotal -->
-              </div> <!-- closes the subtotal -->
+              <table class="table">
+                <tbody>
+                  <tr>
+                    <td>Subtotal:</td>
+                    <td id="subtotalCost" class="sub-price">$0.00</td>
+                  </tr>
+                  <tr>
+                    <td>Shipping:</td>
+                    <td id="shippingCost" class="sub-price">$0.00</td>
+                  </tr>
+                  <tr>
+                    <td><span class="total-label">Total<span>:</td>
+                    <td id="totalCost" class="sub-price">$0.00</td>
+                  </tr>
+                </tbody>
+              </table>
               <div class="confirm">
                  <button id="commit" type="submit" class="btn btn-primary">Submit</button>
               </div> <!-- closes the confirm -->
@@ -201,12 +199,13 @@
       </div>
     </div>
     <hr>
-    <footer>
+    <footer class="footer">
       <div class="container">
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-md-6">
           </div>
-          <div class="col-md-8">
+          <div class="col-md-6">
+            <p>© 2015 Mars-One Space Colonization Technologies Corp</p>
           </div>
         </div>
       </div>
