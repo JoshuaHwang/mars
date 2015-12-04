@@ -211,9 +211,9 @@ a.social, a.social:hover, a.social:visited {
 }
 .martian-test {
   font-size: 16px;
-  line-height: 20px;
   text-align: left;
-  margin-top: 15px;
+  margin-top: 20px;
+  margin-bottom: 50px;
 }
 .sponsor-row {
   margin-top: 50px;

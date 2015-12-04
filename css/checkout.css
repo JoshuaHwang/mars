@@ -29,27 +29,22 @@ input {
   text-align: right;
   font-weight: 500;
 }
+.spacecraft {
+  margin-top: 20px;
+}
+#tierImage, #craftLabel {
+  display: inline-block;
+}
+#orionName, #normandyName, #oneillName {
+  font-size: 30px;
+  font-weight: 100;
+  text-align: right;
+  margin-left: 10px;
+  margin-bottom: -30px;
+}
 .quantity-field {
   width: 50px;
   height: 30px;
-}
-.tier-choice {
-  width: 110px;
-  height: 85px;
-  display: inline-block;
-}
-.craft-label {
-  display: inline-block;
-  margin-left: 20px;
-  font-size: 25px;
-  font-weight: 200;
-}
-.craft-choice p {
-  font-size: 18px;
-}
-.choice-label {
-  font-size: 16px;
-  font-weight: 200;
 }
 .passengers {
   font-size: 16px;

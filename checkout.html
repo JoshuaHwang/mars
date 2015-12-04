@@ -117,7 +117,7 @@
                 <div class="ground">
                   <div class="fedex">
                     <label>
-                      <input type="radio" name="optionsRadios" id="optionsRadios1" value="overnight"> FedEx Priority Overnight
+                      <input type="radio" name="optionsRadios" id="freeRadio" value="overnight"> FedEx Priority Overnight
                     </label>
                   </div>
                   <div class="fedex-price">
@@ -127,7 +127,7 @@
                 <div class="priority">
                   <div class="fedex">
                     <label>
-                      <input type="radio" name="optionsRadios" id="optionsRadios2" value="ground"> FedEx Ground (3-5 Business days)
+                      <input type="radio" name="optionsRadios" id="twentyRadio" value="ground"> FedEx Ground (3-5 Business days)
                     </label>
                   </div>
                   <div class="fedex-price">
@@ -158,16 +158,6 @@
             <div class="review">
               <h4><span class="number">5.</span> Review your flight</h4>
               <div class="craft-type">
-                <div class="spacecraft">
-                  <div class="tier-choice">
-                    <img src="images/orion-checkout.jpg" id="orionTierOrder" class="hidden" alt="Orion checkout image">
-                    <img src="images/normandy-checkout.jpg" id="normandyTierOrder" class="hidden" alt="Normandy checkout image">
-                    <img src="images/oneill-checkout.jpg" id="oneillTierOrder" class="hidden" alt="O'Neill checkout image">
-                  </div>
-                  <div class="craft-label">
-                    <p id="spacecraft-name" class="hidden">The Orion</p>
-                  </div>
-                </div>
                 <div class="craft-choice">
                   <p>Choose your flight:</p>
                   <label class="radio-inline">
@@ -179,6 +169,20 @@
                   <label class="radio-inline">
                     <input type="radio" name="spacecraftChoice" id="oneillRadio" value="oneill"> <span class="choice-label">O'Neill</span>
                   </label>
+                </div>
+                <div class="spacecraft">
+                  <div class="tier-choice">
+                    <div id="tierImage">
+                      <img src="images/orion-checkout.jpg" id="orionOrder" class="hidden" alt="Orion checkout image">
+                      <img src="images/normandy-checkout.jpg" id="normandyOrder" class="hidden" alt="Normandy checkout image">
+                      <img src="images/oneill-checkout.jpg" id="oneillOrder" class="hidden" alt="O'Neill checkout image">
+                    </div>
+                    <div id="craftLabel">
+                      <p id="orionName" class="hidden">The Orion</p>
+                      <p id="normandyName" class="hidden">The Normandy</p>
+                      <p id="oneillName" class="hidden">The O'Neill</p>
+                    </div>
+                  </div>
                 </div>
                 <hr>
                 <div class="quantity">
@@ -197,11 +201,17 @@
                   <tbody>
                     <tr>
                       <td>Subtotal:</td>
-                      <td id="subtotalCost" class="sub-price">$0.00</td>
+                      <td id="subtotalCost" class="show sub-price">$0.00</td>
                     </tr> 
                     <tr>
                       <td>Shipping:</td>
-                      <td id="shippingCost" class="sub-price">$0.00</td>
+                      <td id="dashHolder" class="show sub-price">-- --</td>
+                      <td id="twenty" class="hidden sub-price">$20.00</td>
+                      <td id="free" class="hidden sub-price">FREE</td>
+                    </tr>
+                    <tr>
+                      <td>Tax:</td>
+                      <td id="tax" class="sub-price">$0.00</td>
                     </tr>
                     <tr>
                       <td><span class="total-label">Total<span>:</td>
@@ -230,5 +240,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/app.js"></script>
   </body>
 </html> 
