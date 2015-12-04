@@ -160,13 +160,29 @@
               <div class="craft-type">
                 <div class="spacecraft">
                   <div class="tier-choice">
-                    <img src="#" id="spaceTierOrder" alt="#">
+                    <img src="images/orion-checkout.jpg" id="orionTierOrder" class="hidden" alt="Orion checkout image">
+                    <img src="images/normandy-checkout.jpg" id="normandyTierOrder" class="hidden" alt="Normandy checkout image">
+                    <img src="images/oneill-checkout.jpg" id="oneillTierOrder" class="hidden" alt="O'Neill checkout image">
                   </div>
                   <div class="craft-label">
-                    <p id="spacecraft-name">The Orion</p>
+                    <p id="spacecraft-name" class="hidden">The Orion</p>
                   </div>
                 </div>
+                <div class="craft-choice">
+                  <p>Choose your flight:</p>
+                  <label class="radio-inline">
+                    <input type="radio" name="spacecraftChoice" id="orionRadio" value="orion"> <span class="choice-label">Orion</span>
+                  </label>
+                  <label class="radio-inline">
+                    <input type="radio" name="spacecraftChoice" id="normandyRadio" value="normandy"> <span class="choice-label">Normandy</span>
+                  </label>
+                  <label class="radio-inline">
+                    <input type="radio" name="spacecraftChoice" id="oneillRadio" value="oneill"> <span class="choice-label">O'Neill</span>
+                  </label>
+                </div>
+                <hr>
                 <div class="quantity">
+                  <p class="passengers">Number of passengers:</p>
                   <div class="control-quantity">
                     <input type="text" id="userInput" class="quantity-field form-control" maxlength="3">
                     <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
@@ -182,7 +198,7 @@
                     <tr>
                       <td>Subtotal:</td>
                       <td id="subtotalCost" class="sub-price">$0.00</td>
-                    </tr>
+                    </tr> 
                     <tr>
                       <td>Shipping:</td>
                       <td id="shippingCost" class="sub-price">$0.00</td>

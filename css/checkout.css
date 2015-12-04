@@ -33,10 +33,9 @@ input {
   width: 50px;
   height: 30px;
 }
-#spaceTierOrder, .tier-choice {
-  width: 100px;
-  height: 75px;
-  border: 1px dashed #080808;
+.tier-choice {
+  width: 110px;
+  height: 85px;
   display: inline-block;
 }
 .craft-label {
@@ -44,6 +43,16 @@ input {
   margin-left: 20px;
   font-size: 25px;
   font-weight: 200;
+}
+.craft-choice p {
+  font-size: 18px;
+}
+.choice-label {
+  font-size: 16px;
+  font-weight: 200;
+}
+.passengers {
+  font-size: 16px;
 }
 .quantity {
   margin-top: 20px;
@@ -106,6 +115,6 @@ footer {
       border-right: 1px dotted black;
     }
     .secondcol, .thirdcol {
-      height: 832px;
+      height: 847px;
     }
   }
