@@ -159,14 +159,16 @@
               <h4><span class="number">5.</span> Review your flight</h4>
               <div class="craft-type">
                 <div class="spacecraft">
-                  <img src="#" id="spaceTierOrder" alt="#">
-                </div>
-                <div class="quantity">
+                  <div class="tier-choice">
+                    <img src="#" id="spaceTierOrder" alt="#">
+                  </div>
                   <div class="craft-label">
                     <p id="spacecraft-name">The Orion</p>
                   </div>
+                </div>
+                <div class="quantity">
                   <div class="control-quantity">
-                    <input type="text" class="quantity-field form-control" maxlength="3">
+                    <input type="text" id="userInput" class="quantity-field form-control" maxlength="3">
                     <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
                     <span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
                     <p id="cost">$0.00</p>
@@ -174,22 +176,24 @@
                   </div>
                 </div> <!-- closes the quantity -->
               </div> <!-- closes craft type -->
-              <table class="table">
-                <tbody>
-                  <tr>
-                    <td>Subtotal:</td>
-                    <td id="subtotalCost" class="sub-price">$0.00</td>
-                  </tr>
-                  <tr>
-                    <td>Shipping:</td>
-                    <td id="shippingCost" class="sub-price">$0.00</td>
-                  </tr>
-                  <tr>
-                    <td><span class="total-label">Total<span>:</td>
-                    <td id="totalCost" class="sub-price">$0.00</td>
-                  </tr>
-                </tbody>
-              </table>
+              <div id="table">
+                <table class="table">
+                  <tbody>
+                    <tr>
+                      <td>Subtotal:</td>
+                      <td id="subtotalCost" class="sub-price">$0.00</td>
+                    </tr>
+                    <tr>
+                      <td>Shipping:</td>
+                      <td id="shippingCost" class="sub-price">$0.00</td>
+                    </tr>
+                    <tr>
+                      <td><span class="total-label">Total<span>:</td>
+                      <td id="totalCost" class="sub-price">$0.00</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
               <div class="confirm">
                  <button id="commit" type="submit" class="btn btn-primary">Submit</button>
               </div> <!-- closes the confirm -->

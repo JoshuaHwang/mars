@@ -1,5 +1,6 @@
 h1 {
   font-weight: 200;
+  font-size: 45px;
 }
 h2, h3, h4 {
   font-size: 25px;
@@ -32,19 +33,25 @@ input {
   width: 50px;
   height: 30px;
 }
-.spacecraft {
+#spaceTierOrder, .tier-choice {
   width: 100px;
   height: 75px;
   border: 1px dashed #080808;
   display: inline-block;
 }
-.quantity {
+.craft-label {
   display: inline-block;
-  width: 300px;
-  height: 75px;
+  margin-left: 20px;
+  font-size: 25px;
+  font-weight: 200;
 }
-.control-quantity {
-  display: inline;
+.quantity {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+span.glyphicon, #cost, #userInput {
+  display: inline-block;
+  margin-right: 10px;
 }
 table {
   margin-top: 15px;
