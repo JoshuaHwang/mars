@@ -26,6 +26,9 @@
   margin-bottom: 10px;
   margin-left: 20px;
 }
+.navbar-toggle {
+  margin-top: 20px;
+}
 .navbar-default .navbar-toggle .icon-bar {
   background-color: #ffffff;
 }
@@ -47,11 +50,21 @@ a:link, a:visited {
   margin-top: 20px;
   margin-left: 20px;
 }
+#registerLabel {
+  font-size: 30px;
+  font-weight: 100;
+}
+#newsLetter {
+  margin-top: 10px;
+}
 .form-control {
   width: 400px;
   margin-bottom: 5px;
   margin-left: auto;
   margin-right: auto;
+}
+.modal-body form input {
+  text-align: left;
 }
 button.modal-btn, button.modal-btn:hover {
   background-color: transparent;
@@ -112,8 +125,8 @@ button.form-button, button.form-btn:hover {
   margin-left: auto;
 }
 #mission {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 h3 {
   font-size: 35px;
@@ -342,6 +355,7 @@ table li {
   @media (min-width: 768px) {
     #headerBackground {
       background-size: cover;
+      height: 400px;
     }
     .navbar-default .navbar-brand, .navbar-default .navbar-brand:hover {
      font-size: 35px;
@@ -485,6 +499,9 @@ table li {
     }
     .hook {
       font-size: 70px;
+    }
+    .statement {
+      width: 800px;
     }
     .image-text {
       font-size: 25px;
