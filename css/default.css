@@ -86,11 +86,11 @@ button.form-button, button.form-btn:hover {
   margin-bottom: 50px;
 }
 .journey {
-  font-size: 25px;
+  font-size: 27px;
   font-weight: 100;
 }
 .hook {
-  font-size: 30px;
+  font-size: 33px;
   font-weight: 100;
   letter-spacing: 2px;
 }
@@ -138,8 +138,8 @@ h3 {
   font-weight: 200;
 }
 #testimonial {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 90px;
+  margin-bottom: 70px;
 }
 .quote {
   font-size: 30px;
@@ -162,16 +162,21 @@ footer {
   background-color: #2C2F2F;
   width: 100%;
   height: 80px;
+  font-weight: 100;
   margin-top: 50px;
   padding-top: 30px;
 }
 footer .nav-list {
   margin-left: 10px;
   margin-right: 10px;
+  float: left;
 }
 a.social, a.social:hover, a.social:visited {
   color: #ffffff;
   text-decoration: none;
+  float: right;
+  margin-right: 20px;
+  margin-bottom: 10px;
 }
 /* Custom CSS for pilot page */
 #pilotHead {

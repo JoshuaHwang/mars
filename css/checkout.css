@@ -82,7 +82,10 @@ footer {
       display: inline-block;
       width: 48%;
     }
-    .fifties-right, .thirties-right {
+    .fifties-right {
+      margin-left: 20px;
+    }
+    .thirties-right {
       margin-left: 10px;
     }
     .thirties {

@@ -91,29 +91,6 @@ orionButton.addEventListener('click', showOrion, false);
 normandyButton.addEventListener('click', showNormandy, false);
 oneillButton.addEventListener('click', showOneill, false);
 
-/* ---- SET PRICE BASED ON USER CHOICE OF SPACECRAFT ---- */
-// initialized variables of each spacecraft price 
-var prices = [
-  orionPrice, // $3,000 a ticket
-  normandyPrice, // $7,000 a ticket
-  oneillPrice, // $10,000 a ticket
-];
-
-for (var i = 0; i < 2; ++i)
-{
-  prices[i].createElement('p');
-  var pricesText = document.createTextNode('$3,000');
-  prices[i].appendChild(pricesText);
-  console.log(prices[i]);
-  // prices[i].className = 'hidden';
-}
-
-
-/* ---- SET TOTAL PRICES ---- */
-// initialized variables of the total prices
-var subtotal;
-var tax; // 8%
-var totalPrice;
 
 
 
