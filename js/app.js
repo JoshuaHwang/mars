@@ -90,33 +90,3 @@ var oneillButton = document.getElementById('oneillRadio');
 orionButton.addEventListener('click', showOrion, false);
 normandyButton.addEventListener('click', showNormandy, false);
 oneillButton.addEventListener('click', showOneill, false);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
