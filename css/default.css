@@ -354,8 +354,6 @@ table li {
   border-radius: 10%;
   padding: 7px 10px 7px 10px;
 }
-/* Custom CSS for checkout page */
-
   /* Small devices (tablets, 768px and up) */
   @media (min-width: 768px) {
     #headerBackground {
