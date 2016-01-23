@@ -1,10 +1,8 @@
 /* ---- USER SHIPPING INPUT ---- */
-// initialized variables that stores shipping price
-var free = document.getElementById('free');
-var twenty = document.getElementById('twenty');
+var free       = document.getElementById('free');
+var twenty     = document.getElementById('twenty');
 var dashHolder = document.getElementById('dashHolder');
 
-// functions that shows the price of whichever shipping option user picks
 function showFree()
 {
   free.className = 'sub-price ' + 'show';
@@ -18,20 +16,16 @@ function showTwenty()
   dashHolder.setAttribute('class', 'hidden');
 }
 
-// initialize variables that store the shipping buttons
-var freeButton = document.getElementById('freeRadio');
+var freeButton   = document.getElementById('freeRadio');
 var twentyButton = document.getElementById('twentyRadio');
 
-// event listeners that show the price of the shipping option they picked
 freeButton.addEventListener('click', showFree, false);
 twentyButton.addEventListener('click', showTwenty, false);
 
 /* ---- USER PASSENGER INPUT ---- */
-// initialized variables that stores the user input of passengers 
 var passengers;
 var update = document.getElementById('commit');
 
-// function that takes the user input and turns it into a number
 function passengerData()
 {
   passengers = document.getElementById('userPassengers').value;
@@ -39,20 +33,17 @@ function passengerData()
   console.log(passengers);
 }
 
-// event listener that passes the function passengerData to store user input
 update.addEventListener('click', passengerData, false);
 
 
 /* ---- USER SPACECRAFT INPUT ---- */
-// initialized variables that stores the order images and their labels
-var orion = document.getElementById('orionOrder');
-var orionName = document.getElementById('orionName');
-var normandy = document.getElementById('normandyOrder');
+var orion        = document.getElementById('orionOrder');
+var orionName    = document.getElementById('orionName');
+var normandy     = document.getElementById('normandyOrder');
 var normandyName = document.getElementById('normandyName');
-var oneill = document.getElementById('oneillOrder');
-var oneillName = document.getElementById('oneillName');
+var oneill       = document.getElementById('oneillOrder');
+var oneillName   = document.getElementById('oneillName');
 
-// functions that shows the image and label of the spacecraft the user chooses
 function showOrion()
 {
   orion.setAttribute('class', 'show');
@@ -81,12 +72,10 @@ function showOneill()
   normandyName.setAttribute('class', 'hidden');
 }
 
-// initialized variables that store the radio buttons for spacecrafts
-var orionButton = document.getElementById('orionRadio');
+var orionButton    = document.getElementById('orionRadio');
 var normandyButton = document.getElementById('normandyRadio');
-var oneillButton = document.getElementById('oneillRadio');
+var oneillButton   = document.getElementById('oneillRadio');
 
-// event listeners that show order images and their labels when radio button is clicked
 orionButton.addEventListener('click', showOrion, false);
 normandyButton.addEventListener('click', showNormandy, false);
 oneillButton.addEventListener('click', showOneill, false);
