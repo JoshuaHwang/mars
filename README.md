@@ -7,11 +7,11 @@ A website dedicated to inform and allow citizens of Earth to move to Mars
 - Bootstrap
 - Javascript
 
-##### Landing page
+#### Landing page
 ![Mars landing page](https://github.com/JoshuaHwang/mars/blob/master/images/mars-homepage.png)
-
-##### Space tier page
+---
+#### Space tier page
 ![Mars space tier page](https://github.com/JoshuaHwang/mars/blob/master/images/mars-spacetiers.png)
-
-##### Mars order page
+---
+#### Mars order page
 ![Mars order page](https://github.com/JoshuaHwang/mars/blob/master/images/mars-order.png)
