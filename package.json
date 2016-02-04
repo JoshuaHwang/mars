@@ -1,0 +1,25 @@
+{
+  "name": "mars",
+  "version": "1.0.0",
+  "description": "A website for people who want to move to mars",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoshuaHwang/mars.git"
+  },
+  "author": "Joshua Hwang <joshchwang@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JoshuaHwang/mars/issues"
+  },
+  "homepage": "https://github.com/JoshuaHwang/mars#readme",
+  "dependencies": {
+    "express": "^4.13.4",
+    "gulp": "^3.9.0",
+    "gulp-jade": "^1.1.0",
+    "gulp-nodemon": "^2.0.6"
+  }
+}
