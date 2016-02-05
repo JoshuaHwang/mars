@@ -10,6 +10,10 @@ $red-orange: #FF6600;
 
 /* ----- FONTS ----- */
 // Size
+$company:     30px;
+$nav-link:    16px;
+$hook:        40px;
+$discover:    20px;
 $pilot:       18px;
 $testimonial: 18px;
 $human:       15px;
@@ -20,8 +24,26 @@ $skinny: 100;
 $thin:   200;
 
 // Spacing
-$gap: 2px;
+$gap: 1px;
 
+/* ----- MARGINS ----- */
+// Auto
+@mixin auto {
+  margin-left:  auto;
+  margin-right: auto;
+}
+
+// Nav
+$nav-top:  33px;
+$nav-left: 20px;
+
+// Hook
+$hook-top: 50px;
+
+// Mission
+$mission-top: 300px;
+
+/* ----- BEGIN CSS ----- */
 html, body {
   width: 100%;
   height: 100%;
@@ -40,13 +62,53 @@ html, body {
 }
 #company {
   color: $white;
-  font-weight: $skinny;
+  font-size: $company;
+  font-weight: $thin;
   letter-spacing: $gap;
 }
 nav {
-  color: $white;
-  a {
+  margin-top: $nav-top;
+
+  .nav-link {
     color: $white;
+    font-size: $nav-link;
+    font-weight: $thin;
+    text-decoration: none;
+    float: right;
+    margin-left: $nav-left;
+  }
+
+  .nav-link:focus {
+    outline: 0
+  }
+
+  .register-link {
+    border: 1px solid $white;
+    border-radius: 28px;
+    padding: 1px 10px 1px 10px;
+  }
+}
+.hook-row {
+  text-align: center;
+  color: $white;
+  margin-top: $hook-top;
+
+  #hook {
+    font-size: $hook;
+    font-weight: $thin;
+    letter-spacing: $gap;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  #discover {
+    color: $white;
+    font-size: $discover;
+    font-weight: $thin;
     text-decoration: none;
   }
+}
+
+.mission-row {
+  margin-top: $mission-top;
 }

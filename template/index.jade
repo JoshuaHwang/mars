@@ -10,14 +10,14 @@ html(ng-app="sessionApp")
     div.fold-background
     div.container
       div.row
-        div.col-md-3
+        div.col-md-4.col-sm-4.col-xs-6
           h1#company Mars-One
-        div.col-md-6.col-md-offset-3
+        div.col-md-7.col-md-offset-1.col-sm-7.col-sm-offset-1.col-xs-5.col-xs-offset-1
           nav
-            a(href="#") Space Tiers
-            a(href="#") Pilots
-            a(href="#") Testimonials
-            button(type="button" class="register-btn" data-toggle="modal" data-target="#register") Sign up
+            a(href="#" class="nav-link register-link" data-toggle="modal" data-target="#register") Sign up
+            a(href="#" class="nav-link hidden-xs") Testimonials
+            a(href="#" class="nav-link hidden-xs") Pilots
+            a(href="#" class="nav-link hidden-xs") Space Tiers
             // Modal for sign up
             div(class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="registerLabel")
               div(class="modal-dialog" role="document")
@@ -26,7 +26,7 @@ html(ng-app="sessionApp")
                     button(type="button" class="close" data-dismiss="modal" aria-label="Close") #[span(aria-hidden="true") &times;]
                     h4#registerLabel.modal-title Upload a session.
                   div(class="modal-body")
-                    form(id="uploadSession" class="form" action="/upload" method="POST")
+                    form(id="uploadSession" class="form")
                       label(for="sessionTitle") Title:
                       input(type="text" class="form-control" id="sessionTitle" name="name" placeholder="Session title" ng-model="seshTitle")
                       br
@@ -37,11 +37,16 @@ html(ng-app="sessionApp")
                       br
                       button(type="submit" id="submitButton" class="btn btn-primary") Submit
                       button(type="button" id="closeButton" class="btn btn-default" data-dismiss="modal") Close
-      div.row
+      div.row.hook-row
         h2#hook Your journey begins now, become a martian today.
-        a(href="#") Discover more 
+        a(href="#" id="discover") Discover more >
     div.container
-      div.row
+      div.row.mission-row
         div.col-md-6.col-md-offset-3
           h3#mission Our mission statement
           p.mission-statement Human settlement of Mars is the next giant leap for humankind. We are dedicated to exploring the solar system as a united humanity. Mars is the stepping stone in aiding our understanding of the origins of the solar system. Mars-One will inspire generations to believe that all things are possible.
+    div.container
+      div.row
+        div.col-md-4
+        div.col-md-4
+        div.col-md-4
