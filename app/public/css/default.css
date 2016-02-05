@@ -1,16 +1,94 @@
+/* ----- COLORS ----- */
+/* ----- FONTS ----- */
+/* ----- MARGINS ----- */
+/* ----- BEGIN CSS ----- */
 html, body {
   width: 100%;
   height: 100%;
   margin: 0px;
-  padding: 0px;
-}
+  padding: 0px; }
+
 .fold-background {
-  background: url('/public/images/the-martian.jpg');
+  background: url("/public/images/the-martian.jpg");
   background-size: cover;
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
   height: 500px;
-  z-index: -1;
-}
+  z-index: -1; }
+
+#company {
+  color: #FEFEFE;
+  font-size: 30px;
+  font-weight: 200;
+  letter-spacing: 1px; }
+
+nav {
+  margin-top: 33px; }
+  nav .nav-link {
+    color: #FEFEFE;
+    font-size: 16px;
+    font-weight: 200;
+    text-decoration: none;
+    float: right;
+    margin-left: 20px; }
+  nav .nav-link:focus {
+    outline: 0; }
+  nav .register-link {
+    border: 1px solid #FEFEFE;
+    border-radius: 28px;
+    padding: 1px 10px 1px 10px; }
+
+.hook-row {
+  text-align: center;
+  color: #FEFEFE;
+  margin-top: 50px; }
+  .hook-row #hook {
+    font-size: 40px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-bottom: 20px; }
+  .hook-row #discover {
+    color: #FEFEFE;
+    font-size: 20px;
+    font-weight: 200;
+    text-decoration: none; }
+
+.mission-row {
+  color: #6C6C6C;
+  margin-top: 300px;
+  margin-bottom: 50px; }
+  .mission-row #mission {
+    font-size: 40px;
+    font-weight: 100;
+    text-align: center;
+    margin-bottom: 40px; }
+  .mission-row .mission-statement {
+    font-size: 18px;
+    font-weight: 200; }
+
+.pilot-container {
+  background-color: #F4F4F4;
+  width: 100%;
+  text-align: center;
+  margin-top: 50px; }
+  .pilot-container #pilotHeader {
+    font-size: 40px;
+    font-weight: 100;
+    font-style: italic;
+    letter-spacing: 1px;
+    margin-top: 50px;
+    margin-bottom: 50px; }
+  .pilot-container .pilot-name {
+    font-size: 20px;
+    margin-top: 20px; }
+  .pilot-container .pilot-bio {
+    font-size: 18px;
+    font-weight: 200;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto; }
