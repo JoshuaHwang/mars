@@ -1,7 +1,6 @@
 var gulp    = require('gulp');
 var jade    = require('gulp-jade');
 var nodemon = require('gulp-nodemon');
-var concat  = require('gulp-concat');
 
 var app = 'app/app.js';
 
