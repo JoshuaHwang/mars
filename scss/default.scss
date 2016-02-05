@@ -1,0 +1,52 @@
+/* ----- COLORS ----- */
+$white:      #FEFEFE;
+$black:      #030303;
+$gray:       #868686;
+$dark-gray:  #6C6C6C;
+$fold-gray:  #F4F4F4;
+$light-gray: #BDBDBD;
+$orange:     #FF9900;
+$red-orange: #FF6600;
+
+/* ----- FONTS ----- */
+// Size
+$pilot:       18px;
+$testimonial: 18px;
+$human:       15px;
+$human-info:  13px;
+
+// Weight
+$skinny: 100;
+$thin:   200;
+
+// Spacing
+$gap: 2px;
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+.fold-background {
+  background: url('/public/images/the-martian.jpg');
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 500px;
+  z-index: -1;
+}
+#company {
+  color: $white;
+  font-weight: $skinny;
+  letter-spacing: $gap;
+}
+nav {
+  color: $white;
+  a {
+    color: $white;
+    text-decoration: none;
+  }
+}

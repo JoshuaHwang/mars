@@ -1,5 +1,6 @@
 var gulp    = require('gulp');
 var jade    = require('gulp-jade');
+var sass    = require('gulp-sass');
 var nodemon = require('gulp-nodemon');
 
 var app = 'app/app.js';
@@ -17,8 +18,16 @@ gulp.task('jade', function() {
     .pipe(gulp.dest('./app/views'))
 });
 
-gulp.task('watch', ['jade'], function () {
-  gulp.watch('./template/**/*.jade', ['jade']);
+gulp.task('sass', function() {
+  console.log('Running sass...');
+  gulp.src('./scss/**/*.scss')
+    .pipe(sass())
+    .pipe(gulp.dest('./app/public/css'))
 });
 
-gulp.task('default', ['jade', 'watch', 'nodemon']);
+gulp.task('watch', ['jade', 'sass'], function () {
+  gulp.watch('./template/**/*.jade', ['jade']);
+  gulp.watch('./scss/**/*.scss', ['sass']);
+});
+
+gulp.task('default', ['jade', 'sass', 'watch', 'nodemon']);
