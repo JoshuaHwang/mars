@@ -10,12 +10,13 @@ $red-orange: #FF6600;
 
 /* ----- FONTS ----- */
 // Size
-$company:     30px;
+$huge-header: 40px;
+$big-header:  30px;
 $nav-link:    16px;
 $hook:        40px;
-$discover:    20px;
+$sub-header:  20px;
 $pilot:       18px;
-$testimonial: 18px;
+$paragraph:   18px;
 $human:       15px;
 $human-info:  13px;
 
@@ -38,7 +39,10 @@ $nav-top:  33px;
 $nav-left: 20px;
 
 // Hook
-$hook-top: 50px;
+$nudge: 20px;
+$bump:  30px;
+$push:  40px;
+$shove: 50px;
 
 // Mission
 $mission-top: 300px;
@@ -62,7 +66,7 @@ html, body {
 }
 #company {
   color: $white;
-  font-size: $company;
+  font-size: $big-header;
   font-weight: $thin;
   letter-spacing: $gap;
 }
@@ -91,11 +95,11 @@ nav {
 .hook-row {
   text-align: center;
   color: $white;
-  margin-top: $hook-top;
+  margin-top: $shove;
 
   #hook {
     font-size: $hook;
-    font-weight: $thin;
+    font-weight: $skinny;
     letter-spacing: $gap;
     text-align: center;
     margin-bottom: 20px;
@@ -103,12 +107,62 @@ nav {
 
   #discover {
     color: $white;
-    font-size: $discover;
+    font-size: $sub-header;
     font-weight: $thin;
     text-decoration: none;
   }
 }
-
 .mission-row {
-  margin-top: $mission-top;
+  color: $dark-gray;
+  margin: {
+    top: $mission-top;
+    bottom: $shove;
+  }
+
+  #mission {
+    font-size: $huge-header;
+    font-weight: $skinny;
+    text-align: center;
+    margin-bottom: $push;
+  }
+
+  .mission-statement {
+    font-size: $paragraph;
+    font-weight: $thin;
+  }
+}
+
+.pilot-container {
+  background-color: $fold-gray;
+  width: 100%;
+  text-align: center;
+  margin-top: $shove;
+
+  #pilotHeader {
+    font-size: $huge-header;
+    font-weight: $skinny;
+    font-style: italic;
+    letter-spacing: $gap;
+    margin: {
+      top: $shove;
+      bottom: $shove;
+    }
+  }
+
+  .pilot-name {
+    font-size: $sub-header;
+    margin-top: $nudge;
+  }
+
+  .pilot-bio {
+    font-size: $paragraph;
+    font-weight: $thin;
+    text-align: left;
+    width: 300px;
+    margin: {
+      top: $nudge;
+      bottom: $shove;
+    }
+    @include auto;
+  }
 }
