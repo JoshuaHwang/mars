@@ -48,7 +48,7 @@ html(ng-app="sessionApp")
     div.container.pilot-container
       div.row
         h3#pilotHeader MEET THE PILOTS
-        div.col-md-8.col-md-offset-2
+        div.col-md-10.col-md-offset-1
           div.col-md-4
             div.pilot-box
               img(src="public/images/murph.png" alt="Murph pilot" class="pilots")
@@ -64,3 +64,28 @@ html(ng-app="sessionApp")
               img(src="public/images/adam.png" alt="Adam pilot" class="pilots")
               p.pilot-name Adam
               p.pilot-bio Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
+    div(id="text-carousel" class="carousel slide" data-ride="carousel")
+      div.row
+        div.col-md-8.col-md-offset-2
+          h5#testimonialHeader 100% CUSTOMER SATISFACTION!
+          div.carousel-inner
+            div.item.active
+              div.carousel-content
+                div
+                  p.testimonial Labore et dolore magnam aliquam quaerat voluptatem. sed quia non numquam eius modi tempora incidunt ut 
+                  p.human Niel Armstrong, 
+                  span.title  human
+            div.item
+              p.testimonial.carousel-content Sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
+              p.human Mark Zuckerberg, 
+              span.title  human
+            div.item
+              p.testimonial.carousel-content Voluptatem sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat.
+              p.human Bill Gates, 
+              span.title  human
+      a(href="#text-carousel" class="left carousel-control" data-slide="prev")
+        span(class="glyphicon glyphicon-chevron-left")
+      a(href="#text-carousel" class="right carousel-control" data-slide="next")
+        span(class="glyphicon glyphicon-chevron-right")
+
+

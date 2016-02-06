@@ -131,7 +131,6 @@ nav {
     font-weight: $thin;
   }
 }
-
 .pilot-container {
   background-color: $fold-gray;
   width: 100%;
@@ -158,11 +157,45 @@ nav {
     font-size: $paragraph;
     font-weight: $thin;
     text-align: left;
-
+    width: 300px;
     margin: {
       top: $nudge;
       bottom: $shove;
     }
     @include auto;
+  }
+}
+#text-carousel {
+  text-align: center;
+  margin: {
+    top: $shove;
+    bottom: $shove;
+  }
+
+  #testimonialHeader {
+    font-size: $huge-header;
+    font-weight: $skinny;
+    letter-spacing: $gap;
+    margin-bottom: 90px;
+  }
+
+  .testimonial {
+    font-size: $paragraph;
+    color: $gray;
+    padding-bottom: $nudge;
+    border-bottom: 1px solid $light-gray;
+  }
+
+  .human {
+    color: $dark-gray;
+    display: inline-block;
+  }
+
+  .title {
+    color: $light-gray;
+  }
+
+  .carousel-control.left, .carousel-control.right {
+    background-image: none
   }
 }
