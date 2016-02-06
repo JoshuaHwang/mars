@@ -10,15 +10,13 @@ $red-orange: #FF6600;
 
 /* ----- FONTS ----- */
 // Size
+$hook:        45px;
 $huge-header: 40px;
 $big-header:  30px;
-$nav-link:    16px;
-$hook:        40px;
 $sub-header:  20px;
-$pilot:       18px;
 $paragraph:   18px;
-$human:       15px;
-$human-info:  13px;
+$little-p:    16px;
+$order:       12px;
 
 // Weight
 $skinny: 100;
@@ -34,6 +32,21 @@ $gap: 1px;
   margin-right: auto;
 }
 
+// FlexBox
+@mixin flexIt {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+// Absolute
+@mixin absolute {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -35px;
+}
+
 // Nav
 $nav-top:  33px;
 $nav-left: 20px;
@@ -42,10 +55,11 @@ $nav-left: 20px;
 $nudge: 20px;
 $bump:  30px;
 $push:  40px;
-$shove: 50px;
+$shove: 60px;
 
 // Mission
-$mission-top: 300px;
+$mission-top:  250px;
+$mission-top2: 300px;
 
 /* ----- BEGIN CSS ----- */
 html, body {
@@ -75,7 +89,7 @@ nav {
 
   .nav-link {
     color: $white;
-    font-size: $nav-link;
+    font-size: $little-p;
     font-weight: $thin;
     text-decoration: none;
     float: right;
@@ -116,7 +130,7 @@ nav {
   color: $dark-gray;
   margin: {
     top: $mission-top;
-    bottom: $shove;
+    bottom: $push;
   }
 
   #mission {
@@ -199,3 +213,73 @@ nav {
     background-image: none
   }
 }
+.tier-container {
+  background-color: $fold-gray;
+  width: 100%;
+  text-align: center;
+  padding-bottom: $shove;
+
+  #tierHead {
+    font-size: $huge-header;
+    font-weight: $skinny;
+    margin: {
+      top: $push;
+      bottom: $shove;
+    }
+  }
+
+  .space-tier {
+    font-size: $sub-header;
+  }
+
+  .tier-box {
+    position: relative;
+    height: 250px;
+  }
+
+  .border-right {
+    border-right: 1px solid $light-gray;
+  }
+
+  .border-left {
+    border-left: 1px solid $light-gray;
+  }
+
+  .info {
+    color: $gray;
+    font-size: $little-p;
+    text-align: left;
+    font-weight: $thin;
+    margin-bottom: 5px;
+  }
+
+  .order-btn {
+    background-color: transparent;
+    color: $red-orange;
+    font-size: $order;
+    font-weight: $thin;
+    letter-spacing: $gap;
+    @include absolute;
+    border: {
+      radius: 28px;
+      color: $red-orange;
+    }
+  }
+}
+.footer {
+  margin-top: $shove;
+
+  .social {
+    margin: {
+      bottom: 5px;
+      left: 10px;
+    }
+  }
+}
+
+/* ----- Medium devices (desktops, 992px; and up) ----- */
+  @media (min-width: 992px) {
+    .mission-row {
+      margin-top: $mission-top2;
+    }
+  }
