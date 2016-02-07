@@ -209,6 +209,11 @@ nav {
     border-bottom: 1px solid $light-gray;
   }
 
+  .human-picture {
+    display: inline-block;
+    margin-right: 5px;
+  }
+
   .human {
     color: $dark-gray;
     display: inline-block;
