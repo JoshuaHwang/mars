@@ -106,6 +106,20 @@ nav {
     border-radius: 28px;
     padding: 1px 10px 1px 10px;
   }
+
+  #registerLabel {
+    font-size: $big-header;
+    font-weight: $thin;
+  }
+
+  label {
+    font-size: $paragraph;
+    font-weight: $thin;
+  }
+
+  #submitButton {
+    margin-right: 10px;
+  }
 }
 .hook-row {
   text-align: center;
@@ -263,7 +277,13 @@ nav {
   }
 }
 .footer {
-  @include contentSpace;
+  background-color: $dark-gray;
+  color: $white;
+  width: 100%;
+  padding: {
+    top: $shove;
+    bottom: $push;
+  }
 
   .social {
     margin: {

@@ -35,6 +35,14 @@ nav {
     border: 1px solid #FEFEFE;
     border-radius: 28px;
     padding: 1px 10px 1px 10px; }
+  nav #registerLabel {
+    font-size: 30px;
+    font-weight: 200; }
+  nav label {
+    font-size: 18px;
+    font-weight: 200; }
+  nav #submitButton {
+    margin-right: 10px; }
 
 .hook-row {
   text-align: center;
@@ -152,8 +160,11 @@ nav {
     border-color: #FF6600; }
 
 .footer {
-  margin-top: 60px;
-  margin-bottom: 60px; }
+  background-color: #6C6C6C;
+  color: #FEFEFE;
+  width: 100%;
+  padding-top: 60px;
+  padding-bottom: 40px; }
   .footer .social {
     margin-left: 10px;
     margin-bottom: 5px; }

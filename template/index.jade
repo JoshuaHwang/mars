@@ -1,5 +1,5 @@
 doctype html
-html(ng-app="sessionApp")
+html
   head
     title Mars-One
     script(src="http://code.jquery.com/jquery-2.1.4.min.js")
@@ -24,17 +24,19 @@ html(ng-app="sessionApp")
                 div.modal-content
                   div.modal-header
                     button(type="button" class="close" data-dismiss="modal" aria-label="Close") #[span(aria-hidden="true") &times;]
-                    h4#registerLabel.modal-title Upload a session.
+                    h4#registerLabel.modal-title Explore new horizons.
                   div(class="modal-body")
-                    form(id="uploadSession" class="form")
-                      label(for="sessionTitle") Title:
-                      input(type="text" class="form-control" id="sessionTitle" name="name" placeholder="Session title" ng-model="seshTitle")
+                    form(id="signUpForm" class="form")
+                      label(for="email") Email:
+                      input(type="text" class="form-control" id="email" name="email" placeholder="Email")
                       br
-                      label(for="sessionDescription") Description:
-                      textarea(class="form-control" id="sessionDescription" rows="3" name="description" placeholder="Type session description here.." ng-model="seshDescription")
+                      label(for="username") Username:
+                      input(type="text" class="form-control" id="username" name="username" placeholder="Username")
                       br
-                      input(type="text" class="form-control" name="image" placeholder="input image path here...")
+                      label(for="password") Password:
+                      input(type="text" class="form-control" id="password" name="password" placeholder="Password")
                       br
+                      hr
                       button(type="submit" id="submitButton" class="btn btn-primary") Submit
                       button(type="button" id="closeButton" class="btn btn-default" data-dismiss="modal") Close
       div.row.hook-row
@@ -116,7 +118,7 @@ html(ng-app="sessionApp")
               li.info 365 days
               button(type="button" class="order-btn btn btn-default") ORDER
     footer.footer.container
-      div.row
+      div.row.col-md-10.col-md-offset-1
         div.col-md-4.col-sm-4.col-xs-4.footies
           h4 Technologies
           p HTML5 { Jade }
