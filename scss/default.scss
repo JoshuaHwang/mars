@@ -145,7 +145,7 @@ nav {
   color: $dark-gray;
   margin: {
     top: $mission-top;
-    bottom: $push;
+    bottom: $nudge;
   }
 
   #mission {
@@ -180,7 +180,8 @@ nav {
   }
 
   .pilot-bio {
-    font-size: $paragraph;
+    color: $dark-gray;
+    font-size: $little-p;
     font-weight: $thin;
     text-align: left;
     width: 300px;
@@ -268,6 +269,21 @@ nav {
     margin-bottom: 5px;
   }
 
+  .xs-order {
+    position: relative;
+    height: 150px;
+  }
+
+  #orderNow {
+    font-size: $big-header;
+    font-weight: $skinny;
+    margin-top: $shove;
+  }
+
+  .order-pitch {
+    font-size: $little-p;
+  }
+
   .order-btn {
     background-color: transparent;
     color: $red-orange;
@@ -290,9 +306,18 @@ nav {
     bottom: $push;
   }
 
+  .footies h4 {
+    color: $light-gray;
+    font-weight: $thin;
+  }
+
+  .footies p {
+    font-weight: $thin;
+  }
+
   .social {
     margin: {
-      left: 10px;
+      right: 10px;
       bottom: 5px;
     }
   }

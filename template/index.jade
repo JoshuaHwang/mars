@@ -54,17 +54,17 @@ html
           div.col-md-4
             div.pilot-box
               img(src="public/images/murph.png" alt="Murph pilot" class="pilots")
-              p.pilot-name Murph
+              p.pilot-name Murph Law
               p.pilot-bio Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
           div.col-md-4
             div.pilot-box
               img(src="public/images/damon.png" alt="Damon pilot" class="pilots")
-              p.pilot-name Damon
+              p.pilot-name Matt Damon
               p.pilot-bio Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
           div.col-md-4
             div.pilot-box
               img(src="public/images/adam.png" alt="Adam pilot" class="pilots")
-              p.pilot-name Adam
+              p.pilot-name Adam Aldrin
               p.pilot-bio Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
     div(id="text-carousel" class="carousel slide" data-ride="carousel")
       div.row
@@ -95,37 +95,41 @@ html
     div.container.tier-container
       div.row
         div.col-md-8.col-md-offset-2
-          h6#tierHead Begin your journey today!
-          div.tier-box.col-md-4.col-sm-4.border-right
+          h6#tierHead.hidden-xs Begin your journey today!
+          div.tier-box.col-md-4.col-sm-4.border-right.hidden-xs
             p.space-tier The Orion
-            ul 
+            ul.hidden-xs
               li.info Quick and compact
               li.info For the motivated
               li.info 12 days
               button(type="button" class="order-btn btn btn-default") ORDER
-          div.tier-box.col-md-4.col-sm-4
+          div.tier-box.col-md-4.col-sm-4.hidden-xs
             p.space-tier The normandy
-            ul 
+            ul.hidden-xs
               li.info Familiar and fast
               li.info Room to spare
               li.info Tried and true method
               li.info 55 days
               button(type="button" class="order-btn btn btn-default") ORDER
-          div.tier-box.col-md-4.col-sm-4.border-left
+          div.tier-box.col-md-4.col-sm-4.border-left.hidden-xs
             p.space-tier The O'Neill
-            ul 
+            ul.hidden-xs
               li.info Ideal for families
               li.info Earth like atmosphere
               li.info Extremely spacious
               li.info Controlled weather experience
               li.info 365 days
               button(type="button" class="order-btn btn btn-default") ORDER
+          div.visible-xs.xs-order
+            h6#orderNow Ready to discover what's out there?
+            p.order-pitch Your journey awaits you just one click away.
+            button(type="button" class="order-btn btn btn-default visible-xs") ORDER
     footer.footer.container
       div.row.col-md-10.col-md-offset-1
         div.col-md-4.col-sm-4.col-xs-4.footies
           h4 Technologies
-          p HTML5 { Jade }
-          p CSS3 { Sass }
+          p HTML5 (Jade)
+          p CSS3 (Sass)
           p JavaScript
           p Bootstrap
         div.col-md-4.col-sm-4.col-xs-4.footies
@@ -133,6 +137,7 @@ html
           p Joshua Hwang
           p joshchwang@gmail.com
         div.col-md-4.footies
+          h4 Connect
           a(href="#")
             img(src="public/images/facebook.png" class="social")
           a(href="#")

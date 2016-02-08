@@ -63,7 +63,7 @@ nav {
 .mission-row {
   color: #6C6C6C;
   margin-top: 250px;
-  margin-bottom: 40px; }
+  margin-bottom: 20px; }
   .mission-row #mission {
     font-size: 40px;
     font-weight: 100;
@@ -89,7 +89,8 @@ nav {
     font-size: 20px;
     margin-top: 20px; }
   .pilot-container .pilot-bio {
-    font-size: 18px;
+    color: #6C6C6C;
+    font-size: 16px;
     font-weight: 200;
     text-align: left;
     width: 300px;
@@ -112,6 +113,9 @@ nav {
     color: #868686;
     padding-bottom: 20px;
     border-bottom: 1px solid #BDBDBD; }
+  #text-carousel .human-picture {
+    display: inline-block;
+    margin-right: 5px; }
   #text-carousel .human {
     color: #6C6C6C;
     display: inline-block; }
@@ -146,6 +150,15 @@ nav {
     text-align: left;
     font-weight: 200;
     margin-bottom: 5px; }
+  .tier-container .xs-order {
+    position: relative;
+    height: 150px; }
+  .tier-container #orderNow {
+    font-size: 30px;
+    font-weight: 100;
+    margin-top: 60px; }
+  .tier-container .order-pitch {
+    font-size: 16px; }
   .tier-container .order-btn {
     background-color: transparent;
     color: #FF6600;
@@ -165,8 +178,13 @@ nav {
   width: 100%;
   padding-top: 60px;
   padding-bottom: 40px; }
+  .footer .footies h4 {
+    color: #BDBDBD;
+    font-weight: 200; }
+  .footer .footies p {
+    font-weight: 200; }
   .footer .social {
-    margin-left: 10px;
+    margin-right: 10px;
     margin-bottom: 5px; }
 
 /* ----- Medium devices (desktops, 992px; and up) ----- */
