@@ -5,7 +5,7 @@ A website dedicated to inform and allow citizens of Earth to move to Mars
 - HTML5 (Jade)
 - CSS3 (Sass)
 - Bootstrap
-- Javascript
+- Javascript/JQuery
 - Node/Express
 - Gulp
 
