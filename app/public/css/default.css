@@ -171,6 +171,10 @@ nav {
     margin-left: -35px;
     border-radius: 28px;
     border-color: #FF6600; }
+  .tier-container .order-btn:hover {
+    color: #FF9900;
+    border-color: #FF9900;
+    transition: all 0.3s; }
 
 .footer {
   background-color: #6C6C6C;

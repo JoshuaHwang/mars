@@ -296,6 +296,12 @@ nav {
       color: $red-orange;
     }
   }
+
+  .order-btn:hover {
+    color: $orange;
+    border-color: $orange;
+    transition: all 0.3s;
+  }
 }
 .footer {
   background-color: $dark-gray;
