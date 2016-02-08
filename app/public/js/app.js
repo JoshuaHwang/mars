@@ -1,9 +1,30 @@
-/* ----- DISCOVER SCROLL ----- */
+/* ----- SCROLL TO CONTENT ----- */
 $('#discover').click(discoverMore);
+$('#testimonialsLink').click(testimonialMore);
+$('#pilotsLink').click(pilotMore);
+$('#tiersLink').click(tiersMore);
 
 function discoverMore() {
   $('html, body').animate({
     scrollTop: $('#mission').offset().top
+  }, 1000);
+}
+
+function testimonialMore() {
+  $('html, body').animate({
+    scrollTop: $('#testimonialHeader').offset().top
+  }, 1000);
+}
+
+function pilotMore() {
+  $('html, body').animate({
+    scrollTop: $('#pilotHeader').offset().top
+  }, 1000);
+}
+
+function tiersMore() {
+  $('html, body').animate({
+    scrollTop: $('.tier-container').offset().top
   }, 1000);
 }
 
