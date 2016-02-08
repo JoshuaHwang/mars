@@ -1,4 +1,13 @@
-/* ---- USER SHIPPING INPUT ---- */
+/* ----- DISCOVER SCROLL ----- */
+$('#discover').click(discoverMore);
+
+function discoverMore() {
+  $('html, body').animate({
+    scrollTop: $('#mission').offset().top
+  }, 1000);
+}
+
+/* ----- USER SHIPPING INPUT ----- */
 var free       = document.getElementById('free');
 var twenty     = document.getElementById('twenty');
 var dashHolder = document.getElementById('dashHolder');
