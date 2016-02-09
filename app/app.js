@@ -9,5 +9,7 @@ app.get('/', function(req, res) {
   res.sendFile(path.join(__dirname + '/views/index.html'));
 });
 
-app.listen(1337);
-console.log('1337 is the magic port!');
+var port = process.env.PORT || 1337;
+
+app.listen(port);
+console.log(port + ' is the magic port!');
