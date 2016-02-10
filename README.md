@@ -1,6 +1,9 @@
 # Mars
 A website dedicated to inform and allow citizens of Earth to move to Mars
 
+##### Visit the webpage here
+https://mars-occs.herokuapp.com/
+
 ##### Built with the following technologies
 - HTML5 (Jade)
 - CSS3 (Sass)
